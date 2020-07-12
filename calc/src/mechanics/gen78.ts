@@ -231,6 +231,18 @@ export function calculateSMSS(
     : 1;
   let typeEffectiveness = type1Effectiveness * type2Effectiveness;
 
+  if (attacker.hasAbility('Irrelephant')) {
+    const type1Effectiveness = getMoveEffectiveness(gen, move, defender.types[0]);
+    const type2Effectiveness = getMoveEffectiveness(gen, move, defender.types[1]);
+    if (type1Effectiveness === 0) {
+      let typeEffectiveness = type2Effectiveness;
+    } else if (type2Effectiveness === 0) {
+      let typeEffectiveness = type1Effectiveness;
+    } else {
+      typeEffectiveness = typeEffectiveness
+    }
+  }
+
   let resistedKnockOffDamage =
     !defender.item ||
     (defender.named('Giratina-Origin') && defender.hasItem('Griseous Orb')) ||
