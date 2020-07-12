@@ -589,7 +589,7 @@ export function calculateSMSS(
     bpMods.push(0x14cd);
     desc.attackerAbility = attacker.ability;
   } else if (attacker.hasAbility('Amplifier') && move.flags.sound) {
-    bpMods.chainModify(1.25);
+    bpMods.push(1.25);
     desc.attackerAbility = attacker.ability;
   }
 
