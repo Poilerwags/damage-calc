@@ -3559,6 +3559,59 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 160,
     maxPower: 130,
   },
+  'Medusa Ray': {bp: 0, type: 'Rock'},
+  'New Moon': {bp: 0, type: 'Dark'},
+  Wildfire: {bp: 0, type: 'Fire'},
+  'Jet Stream': {bp: 0, type: 'Dragon'},
+  Dragonify: {bp: 0, type: 'Dragon'},
+  'Ancient Roar': {
+    bp: 80,
+    type: 'Rock',
+    category: 'Special',
+    isSound: true,
+    target: 'allAdjacentFoes',
+    zp: 160,
+    maxPower: 130
+  },
+  'Dark Matter': {
+    bp: 150,
+    type: 'Dark',
+    category: 'Special',
+    zp: 200,
+    maxPower: 150
+  },
+  'Drakon Voice': {
+    bp: 105,
+    type: 'Dragon',
+    category: 'Special',
+    isSound: true,
+    target: 'allAdjacent',
+    zp: 185,
+    maxPower: 135
+  },
+  'Draco Jet': {
+    bp: 40,
+    type: 'Dragon',
+    category: 'Physical',
+    makesContact: true,
+    priority: 1,
+    zp: 100,
+    maxPower: 90
+  },
+  'Lunar Cannon': {
+    bp: 105,
+    type: 'Dark',
+    category: 'Special',
+    zp: 185,
+    maxPower: 135
+  },
+  Corrode: {
+    bp: 70,
+    type: 'Poison',
+    category: 'Special',
+    zp: 140,
+    maxPower: 100
+  },
   'Stuff Cheeks': {bp: 0, type: 'Normal'},
   'Tar Shot': {bp: 0, type: 'Rock'},
   Teatime: {bp: 0, type: 'Normal'},

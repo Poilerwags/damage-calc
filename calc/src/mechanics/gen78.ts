@@ -1,4 +1,4 @@
-﻿import {Generation, AbilityName, StatName, Terrain} from '../data/interface';
+import {Generation, AbilityName, StatName, Terrain} from '../data/interface';
 import {toID} from '../util';
 import {
   getBerryResistType,
@@ -174,6 +174,8 @@ export function calculateSMSS(
   let isPixilate = false;
   let isRefrigerate = false;
   let isGalvanize = false;
+  let isIntoxicate = false;
+  let isFoundry = false;
   let isLiquidVoice = false;
   let isNormalize = false;
   const noTypeChange = move.named(
@@ -201,8 +203,12 @@ export function calculateSMSS(
       move.type = 'Ice';
     } else if ((isNormalize = attacker.hasAbility('Normalize'))) { // Boosts any type
       move.type = 'Normal';
+    } else if ((isIntoxicate = attacker.hasAbility('Intoxicate') && normal)) {
+      move.type = 'Poison';
+    } else if ((isFoundry = attacker.hasAbility('Foundry') && rock)) {
+      move.type = 'Fire';
     }
-    if (isGalvanize || isLiquidVoice || isPixilate || isRefrigerate || isAerilate || isNormalize) {
+    if (isGalvanize || isLiquidVoice || isPixilate || isRefrigerate || isAerilate || isNormalize || isIntoxicate || isFoundry) {
       desc.attackerAbility = attacker.ability;
     }
   }
@@ -268,8 +274,11 @@ export function calculateSMSS(
 
   if ((defender.hasAbility('Wonder Guard') && typeEffectiveness <= 1) ||
       (move.hasType('Grass') && defender.hasAbility('Sap Sipper')) ||
+      (move.hasType('Normal') && defender.hasAbility('Ethereal Shroud')) ||
+      (move.hasType('Fighting') && defender.hasAbility('Ethereal Shroud')) ||
       (move.hasType('Fire') && defender.hasAbility('Flash Fire')) ||
       (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb')) ||
+      (move.hasType('Flying') && defender.hasAbility('Wind Force')) ||
       (move.hasType('Electric') &&
         defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
       (move.hasType('Ground') &&
@@ -574,6 +583,13 @@ export function calculateSMSS(
   } else if (attacker.hasAbility('Tough Claws') && move.flags.contact) {
     bpMods.push(0x14cd);
     desc.attackerAbility = attacker.ability;
+  } else if (!move.isZ && !move.isMax &&
+      (isAerilate || isPixilate || isRefrigerate || isGalvanize || isNormalize)) {
+    bpMods.push(0x14cd);
+    desc.attackerAbility = attacker.ability;
+  } else if (attacker.hasAbility('Amplifier') && move.flags.sound) {
+    move.bp = move.bp * 1.25;
+    desc.attackerAbility = attacker.ability;
   }
 
   if (auraActive && !auraBreak) {
@@ -754,6 +770,9 @@ export function calculateSMSS(
     (attacker.hasAbility('Solar Power') &&
      field.hasWeather('Sun', 'Harsh Sunshine') &&
      move.category === 'Special') ||
+     (attacker.hasAbility('Supercell') &&
+      field.hasWeather('Rain', 'Heavy Rain') &&
+      move.category === 'Special') ||
     (attacker.named('Cherrim') &&
      attacker.hasAbility('Flower Gift') &&
      field.hasWeather('Sun', 'Harsh Sunshine') &&
@@ -770,7 +789,10 @@ export function calculateSMSS(
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
        (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
-       (attacker.hasAbility('Swarm') && move.hasType('Bug')))) ||
+       (attacker.hasAbility('Swarm') && move.hasType('Bug'))
+       (attacker.hasAbility('Psycho Call') && move.hasType('Psychic'))
+       (attacker.hasAbility('Spirit Call') && move.hasType('Ghost'))
+       (attacker.hasAbility('Shadow Call') && move.hasType('Dark')))) ||
     (move.category === 'Special' && attacker.abilityOn && attacker.hasAbility('Plus', 'Minus'))
   ) {
     atMods.push(0x1800);
@@ -781,6 +803,9 @@ export function calculateSMSS(
   } else if (attacker.hasAbility('Steelworker') && move.hasType('Steel')) {
     atMods.push(0x1800);
     desc.attackerAbility = attacker.ability;
+  } else if (attacker.hasAbility('Shadow Synergy') && move.hasType('Dark')) {
+    atMods.push(0x1800);
+    desc.attackerAbility = attacker.ability;
   } else if (
     attacker.hasAbility('Stakeout') && attacker.abilityOn) {
     atMods.push(0x2000);
@@ -788,12 +813,14 @@ export function calculateSMSS(
   } else if (
     (attacker.hasAbility('Water Bubble') && move.hasType('Water')) ||
     (attacker.hasAbility('Huge Power', 'Pure Power') && move.category === 'Physical')
+    (attacker.hasAbility('Athenian') && move.category === 'Special')
   ) {
     atMods.push(0x2000);
     desc.attackerAbility = attacker.ability;
   }
 
   if ((defender.hasAbility('Thick Fat') && move.hasType('Fire', 'Ice')) ||
+      (defender.hasAbility('Ethereal Shroud') && move.hasType('Bug', 'Poison')) ||
       (defender.hasAbility('Water Bubble') && move.hasType('Fire'))) {
     atMods.push(0x800);
     desc.defenderAbility = defender.ability;

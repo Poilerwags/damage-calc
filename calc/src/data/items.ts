@@ -457,6 +457,8 @@ const SS = SM.concat([
   'Sweet Apple',
   'Tart Apple',
   'Throat Spray',
+  'Dark Rock',
+  'Trick Rock',
 ]);
 
 for (let i = 0; i < 100; i++) {

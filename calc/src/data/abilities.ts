@@ -284,6 +284,19 @@ const SS = SM.concat([
   'Steely Spirit',
   'Unseen Fist',
   'Wandering Spirit',
+  'Wind Force',
+  'Amplifier',
+  'Athenian',
+  'Ethereal Shroud',
+  'Foundry',
+  'Intoxicate',
+  'Phototroph',
+  'Psycho Call',
+  'Shadow Call',
+  'Shadow Synergy',
+  'Spirit Call',
+  'Supercell',
+  'Vampiric',
 ]);
 
 export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS];

@@ -241,6 +241,8 @@ const FLING_60 = new Set([
   'Stick',
   'Utility Umbrella',
   'Terrain Extender',
+  'Dark Rock',
+  'Trick Rock',
 ]);
 const FLING_30 = new Set([
   'Absorb Bulb',
