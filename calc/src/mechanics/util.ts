@@ -92,8 +92,9 @@ export function getFinalSpeed(gen: Generation, pokemon: Pokemon, field: Field, s
       (pokemon.hasAbility('Chlorophyll') && weather.includes('Sun')) ||
       (pokemon.hasAbility('Sand Rush') && weather === 'Sand') ||
       (pokemon.hasAbility('Swift Swim') && weather.includes('Rain')) ||
-      (pokemon.hasAbility('Slush Rush') && weather === 'Hail') ||
-      (pokemon.hasAbility('Surge Surfer') && terrain === 'Electric')
+      (pokemon.hasAbility('Slush Rush') && (weather === 'Hail' || weather === 'Sleet')) ||
+      (pokemon.hasAbility('Surge Surfer') && terrain === 'Electric') ||
+      (pokemon.hasAbility('Shadow Dance') && weather === 'Darkness')
   ) {
     speed *= 2;
   } else if (pokemon.hasAbility('Quick Feet') && pokemon.status) {

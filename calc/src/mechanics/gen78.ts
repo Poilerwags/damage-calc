@@ -136,7 +136,7 @@ export function calculateSMSS(
       field.hasWeather('Sun', 'Harsh Sunshine') && !holdingUmbrella ? 'Fire'
       : field.hasWeather('Rain', 'Heavy Rain') && !holdingUmbrella ? 'Water'
       : field.hasWeather('Sand') ? 'Rock'
-      : field.hasWeather('Hail') ? 'Ice'
+      : field.hasWeather('Hail', 'Sleet') ? 'Ice'
       : 'Normal';
     desc.weather = field.weather;
     desc.moveType = move.type;
@@ -607,6 +607,19 @@ export function calculateSMSS(
     }
   }
 
+  if ((attacker.hasAbility('Fairy Aura') || defender.hasAbility('Fairy Aura')) && field.hasWeather('Darkness') && move.type === 'Fairy') {
+    move.bp = move.bp * (3 / 4);
+    auraBreak = false;
+  }
+
+  if ((attacker.hasAbility('Dark Aura') || defender.hasAbility('Dark Aura')) && field.hasWeather('Darkness') && move.type === 'Dark') {
+    if auraBreak {
+      move.bp = move.bp / (5 / 3);
+    } else {
+      move.bp = move.bp * (5 / 4);
+    }
+  }
+
   if (attacker.hasAbility('Steely Spirit') && move.hasType('Steel')) {
     bpMods.push(0x1800);
     desc.attackerAbility = attacker.ability;
@@ -677,9 +690,19 @@ export function calculateSMSS(
   }
 
   if (move.named('Solar Beam', 'Solar Blade') &&
-      field.hasWeather('Rain', 'Heavy Rain', 'Sand', 'Hail')) {
+      field.hasWeather('Rain', 'Heavy Rain', 'Sand', 'Hail', 'Sleet')) {
     bpMods.push(0x800);
     desc.moveBP = basePower / 2;
+    desc.weather = field.weather;
+  } else if (move.named('Solar Beam', 'Solar Blade')
+      field.hasWeather('Darkness')) {
+    move.bp = move.bp * 0.3;
+    desc.moveBP = basePower * 0.3;
+    desc.weather = field.weather;
+  } else if (move.named('Surf')
+      field.hasWeather('Darkness')) {
+    bpMods.push(0x1800);
+    desc.moveBP = basePower * 1.5;
     desc.weather = field.weather;
   } else if (move.named('Knock Off') && !resistedKnockOffDamage) {
     bpMods.push(0x1800);
@@ -781,9 +804,12 @@ export function calculateSMSS(
     (attacker.hasAbility('Solar Power') &&
      field.hasWeather('Sun', 'Harsh Sunshine') &&
      move.category === 'Special') ||
-     (attacker.hasAbility('Supercell') &&
-      field.hasWeather('Rain', 'Heavy Rain') &&
-      move.category === 'Special') ||
+    (attacker.hasAbility('Absolution') &&
+     field.hasWeather('Darkness') &&
+     move.category === 'Special') ||
+    (attacker.hasAbility('Supercell') &&
+     field.hasWeather('Rain', 'Heavy Rain', 'Darkness') &&
+     move.category === 'Special') ||
     (attacker.named('Cherrim') &&
      attacker.hasAbility('Flower Gift') &&
      field.hasWeather('Sun', 'Harsh Sunshine') &&
@@ -1018,18 +1044,29 @@ export function calculateSMSS(
   if (field.defenderSide.isReflect && move.category === 'Physical' &&
       !isCritical && !field.defenderSide.isAuroraVeil) {
     // doesn't stack with Aurora Veil
-    finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
+    if field.hasWeather('Darkness') {
+      damage = damage * 0.4;
+    } else {
+      finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
+    }
     desc.isReflect = true;
   } else if (
     field.defenderSide.isLightScreen && move.category === 'Special' &&
     !isCritical && !field.defenderSide.isAuroraVeil
   ) {
     // doesn't stack with Aurora Veil
-    finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
-    desc.isLightScreen = true;
+    if field.hasWeather('Darkness') {
+      damage = damage * 0.4;
+    } else {
+      finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
+    }
   }
   if (field.defenderSide.isAuroraVeil && !isCritical) {
-    finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
+    if field.hasWeather('Darkness') {
+      damage = damage * 0.4;
+    } else {
+      finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
+    }
     desc.isAuroraVeil = true;
   }
 

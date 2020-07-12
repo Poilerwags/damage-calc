@@ -501,6 +501,14 @@ function getEndOfTurn(
       damage += Math.floor(defender.maxHP() / 16);
       texts.push('Rain Dish recovery');
     }
+  } else if (field.hasWeather('Darkness')) {
+    if (defender.hasAbility('Heliophobia')) {
+      damage += Math.floor(defender.maxHP() / 8);
+      texts.push('Heliophobia recovery');
+    } else if (defender.hasAbility('Absolution')) {
+      damage -= Math.floor(defender.maxHP() / 8);
+      texts.push('Absolution damage');
+    }
   } else if (field.hasWeather('Sand')) {
     if (
       !defender.hasType('Rock', 'Ground', 'Steel') &&
@@ -521,6 +529,18 @@ function getEndOfTurn(
     ) {
       damage -= Math.floor(defender.maxHP() / 16);
       texts.push('hail damage');
+    }
+  } else if (field.hasWeather('Sleet')) {
+    if (defender.hasAbility('Ice Body')) {
+      damage += Math.floor(defender.maxHP() / 16);
+      texts.push('Ice Body recovery');
+    } else if (
+      !defender.hasType('Ice') &&
+      !defender.hasAbility('Magic Guard', 'Overcoat', 'Snow Cloak') &&
+      !defender.hasItem('Safety Goggles')
+    ) {
+      damage -= Math.floor(defender.maxHP() / 8);
+      texts.push('sleet damage');
     }
   }
 
@@ -602,13 +622,17 @@ function getEndOfTurn(
     attacker.hasAbility('Bad Dreams') &&
     !defender.hasAbility('Magic Guard')
   ) {
-    damage -= Math.floor(defender.maxHP() / 8);
+    if (field.hasWeather('Darkness')) {
+      damage -= Math.floor(defender.maxHP() / 4);
+    } else {
+      damage -= Math.floor(defender.maxHP() / 8);
+    }
     texts.push('Bad Dreams');
   }
 
   if (attacker.hasAbility('Vaporization') && defender.hasType('Water')) {
     damage -= Math.floor(defender.maxHP() / 8);
-    texts.push('Vaporization')
+    texts.push('Vaporization damage')
   }
 
   if (!defender.hasAbility('Magic Guard') && TRAPPING.includes(move.name)) {

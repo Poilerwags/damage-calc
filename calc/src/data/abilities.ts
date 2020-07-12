@@ -303,6 +303,10 @@ const SS = SM.concat([
   'Irrelephant',
   'Heliophobia',
   'Noctem',
+  'Absolution',
+  'Shadow Dance',
+  'Lernean',
+  'Sleet',
 ]);
 
 export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS];
