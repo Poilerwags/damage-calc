@@ -608,12 +608,15 @@ export function calculateSMSS(
   }
 
   if ((attacker.hasAbility('Fairy Aura') || defender.hasAbility('Fairy Aura')) && field.hasWeather('Darkness') && move.type === 'Fairy') {
-    move.bp = move.bp * (3 / 4);
-    auraBreak = false;
+    if (auraBreak) {
+      move.bp = move.bp * (4 / 3);
+    } else {
+      move.bp = move.bp * (4 / 3);
+    }
   }
 
   if ((attacker.hasAbility('Dark Aura') || defender.hasAbility('Dark Aura')) && field.hasWeather('Darkness') && move.type === 'Dark') {
-    if auraBreak {
+    if (auraBreak) {
       move.bp = move.bp / (5 / 3);
     } else {
       move.bp = move.bp * (5 / 4);
@@ -694,12 +697,12 @@ export function calculateSMSS(
     bpMods.push(0x800);
     desc.moveBP = basePower / 2;
     desc.weather = field.weather;
-  } else if (move.named('Solar Beam', 'Solar Blade')
+  } else if (move.named('Solar Beam', 'Solar Blade') &&
       field.hasWeather('Darkness')) {
     move.bp = move.bp * 0.3;
     desc.moveBP = basePower * 0.3;
     desc.weather = field.weather;
-  } else if (move.named('Surf')
+  } else if (move.named('Surf') &&
       field.hasWeather('Darkness')) {
     bpMods.push(0x1800);
     desc.moveBP = basePower * 1.5;
@@ -1044,8 +1047,8 @@ export function calculateSMSS(
   if (field.defenderSide.isReflect && move.category === 'Physical' &&
       !isCritical && !field.defenderSide.isAuroraVeil) {
     // doesn't stack with Aurora Veil
-    if field.hasWeather('Darkness') {
-      damage = damage * 0.4;
+    if (field.hasWeather('Darkness')) {
+      move.bp = move.bp * 0.4;
     } else {
       finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
     }
@@ -1055,15 +1058,15 @@ export function calculateSMSS(
     !isCritical && !field.defenderSide.isAuroraVeil
   ) {
     // doesn't stack with Aurora Veil
-    if field.hasWeather('Darkness') {
-      damage = damage * 0.4;
+    if (field.hasWeather('Darkness')) {
+      move.bp = move.bp * 0.4;
     } else {
       finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
     }
   }
   if (field.defenderSide.isAuroraVeil && !isCritical) {
-    if field.hasWeather('Darkness') {
-      damage = damage * 0.4;
+    if (field.hasWeather('Darkness')) {
+      move.bp = move.bp * 0.4;
     } else {
       finalMods.push(field.gameType !== 'Singles' ? 0xaac : 0x800);
     }
