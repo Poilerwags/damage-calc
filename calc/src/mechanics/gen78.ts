@@ -956,10 +956,21 @@ export function calculateSMSS(
     baseDamage = pokeRound(OF32(baseDamage * 0x1800) / 0x1000);
     desc.weather = field.weather;
   } else if (!noWeatherBoost &&
+    (field.hasWeather('Darkness') && move.hasType('Dark')) ||
+    (field.hasWeather('Darkness') && move.hasType('Ghost'))
+  ) {
+    baseDamage = pokeRound(baseDamage * 1.35);
+    desc.weather = field.weather;
+  } else if (!noWeatherBoost &&
     (field.hasWeather('Sun') && move.hasType('Water')) ||
     (field.hasWeather('Rain') && move.hasType('Fire'))
   ) {
     baseDamage = pokeRound(OF32(baseDamage * 0x800) / 0x1000);
+    desc.weather = field.weather;
+  } else if (!noWeatherBoost &&
+    (field.hasWeather('Darkness') && move.hasType('Fairy'))
+  ) {
+    baseDamage = pokeRound(baseDamage * 0.75);
     desc.weather = field.weather;
   } else if (!noWeatherBoost &&
     (field.hasWeather('Harsh Sunshine') && move.hasType('Water')) ||
