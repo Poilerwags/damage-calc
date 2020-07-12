@@ -557,6 +557,10 @@ export function calculateSMSS(
   ) {
     bpMods.push(0x1333);
     desc.attackerAbility = attacker.ability;
+  } else if (!move.isZ && !move.isMax &&
+      (isIntoxicate || isFoundry)) {
+    bpMods.push(0x14cd);
+    desc.attackerAbility = attacker.ability;
   }
 
   if (field.attackerSide.isBattery && move.category === 'Special') {
