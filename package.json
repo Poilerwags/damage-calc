@@ -4,6 +4,7 @@
   "repository": "github:smogon/damage-calc",
   "license": "MIT",
   "dependencies": {
+    "@pkmn/dex": "0.0.9",
     "@types/jest": "^26.0.4",
     "@types/mocha": "^8.0.0",
     "calc": "file:calc"

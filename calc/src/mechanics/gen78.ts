@@ -786,9 +786,9 @@ export function calculateSMSS(
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
        (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
-       (attacker.hasAbility('Swarm') && move.hasType('Bug'))
-       (attacker.hasAbility('Psycho Call') && move.hasType('Psychic'))
-       (attacker.hasAbility('Spirit Call') && move.hasType('Ghost'))
+       (attacker.hasAbility('Swarm') && move.hasType('Bug')) ||
+       (attacker.hasAbility('Psycho Call') && move.hasType('Psychic')) ||
+       (attacker.hasAbility('Spirit Call') && move.hasType('Ghost')) ||
        (attacker.hasAbility('Shadow Call') && move.hasType('Dark')))) ||
     (move.category === 'Special' && attacker.abilityOn && attacker.hasAbility('Plus', 'Minus'))
   ) {
@@ -809,7 +809,7 @@ export function calculateSMSS(
     desc.attackerAbility = attacker.ability;
   } else if (
     (attacker.hasAbility('Water Bubble') && move.hasType('Water')) ||
-    (attacker.hasAbility('Huge Power', 'Pure Power') && move.category === 'Physical')
+    (attacker.hasAbility('Huge Power', 'Pure Power') && move.category === 'Physical') ||
     (attacker.hasAbility('Athenian') && move.category === 'Special')
   ) {
     atMods.push(0x2000);
