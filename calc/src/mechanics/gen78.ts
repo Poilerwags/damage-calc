@@ -231,18 +231,6 @@ export function calculateSMSS(
     : 1;
   let typeEffectiveness = type1Effectiveness * type2Effectiveness;
 
-  if (attacker.hasAbility('Irrelephant')) {
-    const type1Effectiveness = getMoveEffectiveness(gen, move, defender.types[0]);
-    const type2Effectiveness = getMoveEffectiveness(gen, move, defender.types[1]);
-    if (type1Effectiveness === 0) {
-      let typeEffectiveness = type2Effectiveness;
-    } else if (type2Effectiveness === 0) {
-      let typeEffectiveness = type1Effectiveness;
-    } else {
-      typeEffectiveness = typeEffectiveness
-    }
-  }
-
   let resistedKnockOffDamage =
     !defender.item ||
     (defender.named('Giratina-Origin') && defender.hasItem('Griseous Orb')) ||
@@ -644,7 +632,7 @@ export function calculateSMSS(
     desc.attackerAbility = attacker.ability;
   }
 
-  if (attacker.haxAbility('Spectral Jaws')) {
+  if (attacker.hasAbility('Spectral Jaws')) {
     bpMods.push(0x14cd);
     move.category = 'Special';
     desc.attackerAbility = attacker.ability;
@@ -1110,7 +1098,7 @@ export function calculateSMSS(
     } else {
       finalMods.push(0x2000);
     }
-    desc.attackerAbility = attacker.Ability;
+    desc.attackerAbility = attacker.ability;
   }
 
   if (move.hasType(getBerryResistType(defender.item)) &&
