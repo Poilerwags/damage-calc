@@ -297,6 +297,12 @@ const SS = SM.concat([
   'Spirit Call',
   'Supercell',
   'Vampiric',
+  'Vaporization',
+  'Spectral Jaws',
+  'Pendulum',
+  'Irrelephant',
+  'Heliophobia',
+  'Noctem',
 ]);
 
 export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS];
