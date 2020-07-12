@@ -588,6 +588,9 @@ export function calculateSMSS(
       (isAerilate || isPixilate || isRefrigerate || isGalvanize || isNormalize)) {
     bpMods.push(0x14cd);
     desc.attackerAbility = attacker.ability;
+  } else if (attacker.hasAbility('Amplifier') && move.flags.sound) {
+    move.bp = move.bp * 1.25;
+    desc.attackerAbility = attacker.ability;
   }
 
   if (auraActive && !auraBreak) {
