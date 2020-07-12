@@ -10079,7 +10079,7 @@ var SS_PATCH = {
     },
     'Magcargo-Mega': {
         types: ['Fire'],
-        bs: { hp: 50, at: 70, df: 10, sa: 150, sd: 100, sp: 50 },
+        bs: { hp: 60, at: 70, df: 100, sa: 150, sd: 100, sp: 50 },
         weightkg: 55,
         abilities: { 0: 'Custom Ability' },
         baseSpecies: 'Magcargo'
@@ -10191,7 +10191,7 @@ var SS_PATCH = {
     },
     'Cryogonal-Mega': {
         types: ['Ice'],
-        bs: { hp: 70, at: 50, df: 65, sa: 115, sd: 150, sp: 135 },
+        bs: { hp: 80, at: 50, df: 65, sa: 115, sd: 150, sp: 135 },
         weightkg: 148,
         abilities: { 0: 'Custom Ability' },
         baseSpecies: 'Cryogonal'
