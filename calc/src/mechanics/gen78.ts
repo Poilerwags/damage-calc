@@ -191,6 +191,7 @@ export function calculateSMSS(
 
   if (!move.isZ && !noTypeChange) {
     const normal = move.hasType('Normal');
+    const rock = move.hasType('Rock');
     if ((isAerilate = attacker.hasAbility('Aerilate') && normal)) {
       move.type = 'Flying';
     } else if ((isGalvanize = attacker.hasAbility('Galvanize') && normal)) {
