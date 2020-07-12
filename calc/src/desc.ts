@@ -543,7 +543,7 @@ function getEndOfTurn(
 
   if (defender.hasAbility('Phototroph')) {
     damage += Math.floor(defender.maxHP() / 16);
-    if field.hasWeather('Sun', 'Harsh Sunshine') {
+    if (field.hasWeather('Sun', 'Harsh Sunshine')) {
       damage += Math.floor(defender.maxHP() / 16);
     }
     texts.push('Phototroph recovery')
