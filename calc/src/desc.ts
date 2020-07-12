@@ -113,14 +113,6 @@ export function getRecovery(
     }
   }
 
-  if (attacker.hasAbility('Vampiric') && move.flags.contact) {
-    const max = Math.round(defender.maxHP() / 4);
-    for (let i = 0; i < minD.length; i++) {
-      recovery[0] += Math.min(Math.round(minD[i] * move.hits / 4), max);
-      recovery[1] += Math.min(Math.round(maxD[i] * move.hits / 4), max);
-    }
-  }
-
   if (move.named('G-Max Finale')) {
     recovery[0] = recovery[1] = Math.round(attacker.maxHP() / 6);
   }
@@ -539,14 +531,6 @@ function getEndOfTurn(
   } else if (defender.hasItem('Sticky Barb')) {
     damage -= Math.floor(defender.maxHP() / 8);
     texts.push('Sticky Barb damage');
-  }
-
-  if (defender.hasAbility('Phototroph')) {
-    damage += Math.floor(defender.maxHP() / 16);
-    if field.hasWeather('Sun', 'Harsh Sunshine') {
-      damage += Math.floor(defender.maxHP() / 16);
-    }
-    texts.push('Phototroph recovery')
   }
 
   if (field.defenderSide.isSeeded) {
