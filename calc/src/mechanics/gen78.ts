@@ -278,7 +278,7 @@ export function calculateSMSS(
       (move.hasType('Normal') && defender.hasAbility('Ethereal Shroud')) ||
       (move.hasType('Fighting') && defender.hasAbility('Ethereal Shroud')) ||
       (move.hasType('Fire') && defender.hasAbility('Flash Fire')) ||
-      (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb')) ||
+      (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb', 'Vaporization')) ||
       (move.hasType('Flying') && defender.hasAbility('Wind Force')) ||
       (move.hasType('Electric') &&
         defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||

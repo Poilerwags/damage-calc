@@ -599,11 +599,16 @@ function getEndOfTurn(
     }
   } else if (
     (defender.hasStatus('slp') || defender.hasAbility('Comatose')) &&
-    attacker.hasAbility('isBadDreams') &&
+    attacker.hasAbility('Bad Dreams') &&
     !defender.hasAbility('Magic Guard')
   ) {
     damage -= Math.floor(defender.maxHP() / 8);
     texts.push('Bad Dreams');
+  }
+
+  if (attacker.hasAbility('Vaporization') && defender.hasType('Water')) {
+    damage -= Math.floor(defender.maxHP() / 8);
+    texts.push('Vaporization')
   }
 
   if (!defender.hasAbility('Magic Guard') && TRAPPING.includes(move.name)) {
