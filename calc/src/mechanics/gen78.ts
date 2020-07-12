@@ -632,7 +632,7 @@ export function calculateSMSS(
     desc.attackerAbility = attacker.ability;
   }
 
-  if (attacker.hasAbility('Spectral Jaws')) {
+  if (attacker.hasAbility('Spectral Jaws') && move.flags.bite) {
     bpMods.push(0x14cd);
     move.category = 'Special';
     desc.attackerAbility = attacker.ability;
@@ -1091,14 +1091,6 @@ export function calculateSMSS(
       finalMods.push(0x2000);
     }
     desc.attackerItem = attacker.item;
-  } else if (attacker.hasAbility('Pendulum') && move.timesUsedWithMetronome! >= 1) {
-    const timesUsedWithMetronome = Math.floor(move.timesUsedWithMetronome!);
-    if (timesUsedWithMetronome <= 4) {
-      finalMods.push(0x1000 + timesUsedWithMetronome * 0x333);
-    } else {
-      finalMods.push(0x2000);
-    }
-    desc.attackerAbility = attacker.ability;
   }
 
   if (move.hasType(getBerryResistType(defender.item)) &&
