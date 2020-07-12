@@ -4,12 +4,6 @@
   "repository": "github:smogon/damage-calc",
   "license": "MIT",
   "dependencies": {
-<<<<<<< HEAD
-    "@pkmn/dex": "0.0.9",
-    "@types/jest": "^26.0.4",
-    "@types/mocha": "^8.0.0",
-=======
->>>>>>> parent of 64130ea... try it like this?
     "calc": "file:calc"
   },
   "devDependencies": {
