@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@pkmn/dex": "0.0.9",
+    "@smogon/calc": "^0.4.2",
     "@types/jest": "^26.0.4",
     "@types/mocha": "^8.0.0",
     "calc": "file:calc"
