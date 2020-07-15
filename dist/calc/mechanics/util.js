@@ -226,6 +226,13 @@ function checkDownload(source, target) {
     }
 }
 exports.checkDownload = checkDownload;
+function checkChlorofury(source) {
+    if (source.hasAbility('Chlorofury')) {
+        source.boosts.spa = Math.min(6, source.boosts.spa + 1);
+        source.boosts.atk = Math.min(6, source.boosts.atk + 1);
+    }
+}
+exports.checkChlorofury = checkChlorofury;
 function checkIntrepidSword(source) {
     if (source.hasAbility('Intrepid Sword')) {
         source.boosts.atk = Math.min(6, source.boosts.atk + 1);

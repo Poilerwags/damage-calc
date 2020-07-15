@@ -19,6 +19,8 @@ function calculateSMSS(gen, attacker, defender, move, field) {
     util_2.checkIntimidate(gen, defender, attacker);
     util_2.checkDownload(attacker, defender);
     util_2.checkDownload(defender, attacker);
+    util_2.checkChlorofury(attacker);
+    util_2.checkChlorofury(defender);
     util_2.checkIntrepidSword(attacker);
     util_2.checkIntrepidSword(defender);
     util_2.checkDauntlessShield(attacker);

@@ -13,6 +13,7 @@ export declare function checkForecast(pokemon: Pokemon, weather?: Weather): void
 export declare function checkKlutz(pokemon: Pokemon): void;
 export declare function checkIntimidate(gen: Generation, source: Pokemon, target: Pokemon): void;
 export declare function checkDownload(source: Pokemon, target: Pokemon): void;
+export declare function checkChlorofury(source: Pokemon): void;
 export declare function checkIntrepidSword(source: Pokemon): void;
 export declare function checkDauntlessShield(source: Pokemon): void;
 export declare function checkInfiltrator(pokemon: Pokemon, affectedSide: Side): void;
