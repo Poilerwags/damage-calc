@@ -194,6 +194,13 @@ export function checkDownload(source: Pokemon, target: Pokemon) {
   }
 }
 
+export function checkChlorofury(source: Pokemon) {
+  if (source.hasAbility('Chlorofury')) {
+    source.boosts.spa = Math.min(6, source.boosts.spa + 1);
+    source.boosts.atk = Math.min(6, source.boosts.atk + 1);
+  }
+}
+
 export function checkIntrepidSword(source: Pokemon) {
   if (source.hasAbility('Intrepid Sword')) {
     source.boosts.atk = Math.min(6, source.boosts.atk + 1);

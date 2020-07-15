@@ -19,6 +19,7 @@ import {
   checkAirLock,
   checkDauntlessShield,
   checkDownload,
+  checkChlorofury,
   checkForecast,
   checkInfiltrator,
   checkIntimidate,
@@ -64,6 +65,8 @@ export function calculateSMSS(
   checkIntimidate(gen, defender, attacker);
   checkDownload(attacker, defender);
   checkDownload(defender, attacker);
+  checkChlorofury(attacker);
+  checkChlorofury(defender);
   checkIntrepidSword(attacker);
   checkIntrepidSword(defender);
   checkDauntlessShield(attacker);
