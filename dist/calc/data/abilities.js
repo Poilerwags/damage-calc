@@ -339,6 +339,7 @@ var SS = SM.concat([
     'Shadow Dance',
     'Lernean',
     'Sleet',
+    'Chlorofury',
 ]);
 exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS];
 var Abilities = (function () {
