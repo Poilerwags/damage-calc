@@ -484,7 +484,7 @@ function calculateSMSS(gen, attacker, defender, move, field) {
         desc.attackerAbility = attacker.ability;
     }
     else if (attacker.hasAbility('Amplifier') && move.flags.sound) {
-        bpMods.push(1.25);
+        bpMods.push(0x1400);
         desc.attackerAbility = attacker.ability;
     }
     if (auraActive && !auraBreak) {
