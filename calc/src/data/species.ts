@@ -9158,7 +9158,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Dugtrio-Delta': {
     types: ['Ice', 'Normal'],
-    bs: {hp: 10, at: 55, df: 25, sa: 35, sd: 45, sp: 95},
+    bs: {hp: 35, at: 100, df: 50, sa: 50, sd: 70, sp: 120},
     weightkg: 33.3,
     abilities: {0: 'Fur Coat'},
   },
