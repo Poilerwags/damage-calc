@@ -7488,7 +7488,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Slowbro: {otherFormes: ['Slowbro-Galar', 'Slowbro-Mega']},
   Slowpoke: {otherFormes: ['Slowpoke-Galar']},
   Snorlax: {otherFormes: ['Snorlax-Gmax']},
-  Stunfisk: {otherFormes: ['Stunfisk-Galar']},
+  Stunfisk: {otherFormes: ['Stunfisk-Galar', 'Stunfisk-Mega']},
   Venusaur: {otherFormes: ['Venusaur-Gmax', 'Venusaur-Mega']},
   Weezing: {otherFormes: ['Weezing-Galar']},
   Yamask: {otherFormes: ['Yamask-Galar']},
