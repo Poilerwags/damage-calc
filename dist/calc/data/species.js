@@ -9137,7 +9137,7 @@ var SS_PATCH = {
     },
     'Dugtrio-Delta': {
         types: ['Ice', 'Normal'],
-        bs: { hp: 10, at: 55, df: 25, sa: 35, sd: 45, sp: 95 },
+        bs: { hp: 35, at: 100, df: 50, sa: 50, sd: 70, sp: 120 },
         weightkg: 33.3,
         abilities: { 0: 'Fur Coat' }
     },
@@ -9504,7 +9504,8 @@ var SS_PATCH = {
         types: ['Poison'],
         bs: { hp: 70, at: 100, df: 70, sa: 105, sd: 75, sp: 40 },
         weightkg: 220,
-        abilities: { 0: 'Corrosion' }
+        abilities: { 0: 'Corrosion' },
+        otherFormes: ['Camerupt-Delta-Mega']
     },
     'Camerupt-Delta-Mega': {
         types: ['Poison'],
@@ -9596,7 +9597,8 @@ var SS_PATCH = {
         types: ['Ground', 'Bug'],
         bs: { hp: 80, at: 135, df: 130, sa: 95, sd: 90, sp: 70 },
         weightkg: 224,
-        abilities: { 0: 'Poison Heal' }
+        abilities: { 0: 'Poison Heal' },
+        otherFormes: ['Metagross-Delta-S-Mega']
     },
     'Metagross-Delta-S-Mega': {
         types: ['Ground', 'Bug'],
@@ -9623,7 +9625,8 @@ var SS_PATCH = {
         types: ['Rock', 'Grass'],
         bs: { hp: 80, at: 135, df: 130, sa: 95, sd: 90, sp: 70 },
         weightkg: 550,
-        abilities: { 0: 'Rock Head' }
+        abilities: { 0: 'Rock Head' },
+        otherFormes: ['Metagross-Delta-R-Mega']
     },
     'Metagross-Delta-R-Mega': {
         types: ['Rock', 'Grass'],
