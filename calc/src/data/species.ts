@@ -8558,119 +8558,119 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 49, df: 49, sa: 65, sd: 65, sp: 45},
     weightkg: 6.9,
     abilities: {0: 'Regenerator'},
-    nfe: true
+    nfe: true,
   },
   'Ivysaur-Delta': {
     types: ['Fairy', 'Psychic'],
     bs: {hp: 60, at: 62, df: 63, sa: 80, sd: 80, sp: 60},
     weightkg: 16,
     abilities: {0: 'Regenerator'},
-    nfe: true
+    nfe: true,
   },
   'Venusaur-Delta': {
     types: ['Fairy', 'Psychic'],
     bs: {hp: 80, at: 82, df: 83, sa: 100, sd: 100, sp: 80},
     weightkg: 100,
     abilities: {0: 'Regenerator'},
-    otherFormes: ['Venusaur-Delta-Mega']
+    otherFormes: ['Venusaur-Delta-Mega'],
   },
   'Venusaur-Delta-Mega': {
     types: ['Fairy', 'Psychic'],
     bs: {hp: 80, at: 100, df: 123, sa: 122, sd: 120, sp: 80},
     weightkg: 155.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Venusaur-Delta'
+    baseSpecies: 'Venusaur-Delta',
   },
   'Charmander-Delta': {
     types: ['Ghost', 'Dragon'],
     bs: {hp: 39, at: 52, df: 43, sa: 60, sd: 50, sp: 65},
     weightkg: 8.5,
     abilities: {0: 'Spirit Call'},
-    nfe: true
+    nfe: true,
   },
   'Charmeleon-Delta': {
     types: ['Ghost', 'Dragon'],
     bs: {hp: 58, at: 64, df: 58, sa: 80, sd: 65, sp: 80},
     weightkg: 19,
     abilities: {0: 'Spirit Call'},
-    nfe: true
+    nfe: true,
   },
   'Charizard-Delta': {
     types: ['Ghost', 'Dragon'],
     bs: {hp: 78, at: 84, df: 78, sa: 109, sd: 85, sp: 100},
     weightkg: 90.5,
     abilities: {0: 'Spirit Call'},
-    otherFormes: ['Charizard-Delta-Mega']
+    otherFormes: ['Charizard-Delta-Mega'],
   },
   'Charizard-Delta-Mega': {
     types: ['Ghost', 'Dragon'],
     bs: {hp: 78, at: 104, df: 78, sa: 159, sd: 115, sp: 100},
     weightkg: 100.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Charizard-Delta'
+    baseSpecies: 'Charizard-Delta',
   },
   'Squirtle-Delta': {
     types: ['Dark', 'Fighting'],
     bs: {hp: 44, at: 48, df: 65, sa: 50, sd: 64, sp: 43},
     weightkg: 9,
     abilities: {0: 'Shadow Call'},
-    nfe: true
+    nfe: true,
   },
   'Wartortle-Delta': {
     types: ['Dark', 'Fighting'],
     bs: {hp: 59, at: 63, df: 80, sa: 65, sd: 80, sp: 58},
     weightkg: 22.5,
     abilities: {0: 'Shadow Call'},
-    nfe: true
+    nfe: true,
   },
   'Blastoise-Delta': {
     types: ['Dark', 'Fighting'],
     bs: {hp: 79, at: 83, df: 100, sa: 85, sd: 105, sp: 78},
     weightkg: 85.5,
     abilities: {0: 'Shadow Call'},
-    otherFormes: ['Blastoise-Delta-Mega']
+    otherFormes: ['Blastoise-Delta-Mega'],
   },
   'Blastoise-Delta-Mega': {
     types: ['Dark', 'Fighting'],
     bs: {hp: 79, at: 103, df: 120, sa: 135, sd: 115, sp: 78},
     weightkg: 101.1,
     abilities: {0: 'Mega Launcher'},
-    baseSpecies: 'Blastoise-Delta'
+    baseSpecies: 'Blastoise-Delta',
   },
   'Pidgey-Delta': {
     types: ['Dark', 'Dragon'],
     bs: {hp: 40, at: 45, df: 40, sa: 35, sd: 35, sp: 56},
     weightkg: 1.8,
     abilities: {0: 'Intimidate'},
-    nfe: true
+    nfe: true,
   },
   'Pidgeotto-Delta': {
     types: ['Dark', 'Dragon'],
     bs: {hp: 63, at: 60, df: 55, sa: 50, sd: 50, sp: 71},
     weightkg: 30,
     abilities: {0: 'Intimidate'},
-    nfe: true
+    nfe: true,
   },
   'Pidgeot-Delta': {
     types: ['Dark', 'Dragon'],
     bs: {hp: 83, at: 80, df: 75, sa: 70, sd: 70, sp: 101},
     weightkg: 39.5,
     abilities: {0: 'Intimidate'},
-    otherFormes: ['Pidgeot-Delta-Mega']
+    otherFormes: ['Pidgeot-Delta-Mega'],
   },
   'Pidgeot-Delta-Mega': {
     types: ['Dark', 'Dragon'],
     bs: {hp: 83, at: 80, df: 80, sa: 135, sd: 80, sp: 121},
     weightkg: 50.5,
     abilities: {0: 'Intimidate'},
-    baseSpecies: 'Pidgeot-Delta'
+    baseSpecies: 'Pidgeot-Delta',
   },
   'Pikachu-Delta': {
     types: ['Flying', 'Fairy'],
     bs: {hp: 35, at: 55, df: 40, sa: 50, sd: 50, sp: 90},
     weightkg: 6,
     abilities: {0: 'Cloud Nine'},
-    nfe: true
+    nfe: true,
   },
   'Raichu-Delta': {
     types: ['Flying', 'Fairy'],
@@ -8683,98 +8683,98 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 20, at: 40, df: 15, sa: 35, sd: 35, sp: 60},
     weightkg: 2,
     abilities: {0: 'Cloud Nine'},
-    nfe: true
+    nfe: true,
   },
   'Pawniard-Delta': {
     types: ['Flying', 'Fighting'],
     bs: {hp: 45, at: 85, df: 70, sa: 40, sd: 40, sp: 60},
     weightkg: 10.2,
     abilities: {0: 'Wind Force'},
-    nfe: true
+    nfe: true,
   },
   'Bisharp-Delta': {
     types: ['Flying', 'Fighting'],
     bs: {hp: 65, at: 125, df: 100, sa: 60, sd: 70, sp: 70},
     weightkg: 70,
     abilities: {0: 'Wind Force'},
-    otherFormes: ['Bisharp-Delta-Mega']
+    otherFormes: ['Bisharp-Delta-Mega'],
   },
   'Bisharp-Delta-Mega': {
     types: ['Flying', 'Fighting'],
     bs: {hp: 65, at: 145, df: 125, sa: 60, sd: 85, sp: 105},
     weightkg: 70,
     abilities: {0: 'Technician'},
-    baseSpecies: 'Bisharp-Delta'
+    baseSpecies: 'Bisharp-Delta',
   },
   'Ralts-Delta': {
     types: ['Electric', 'Ice'],
     bs: {hp: 28, at: 25, df: 25, sa: 45, sd: 35, sp: 40},
     weightkg: 6.6,
     abilities: {0: 'Lightning Rod'},
-    nfe: true
+    nfe: true,
   },
   'Kirlia-Delta': {
     types: ['Electric', 'Ice'],
     bs: {hp: 38, at: 35, df: 35, sa: 65, sd: 55, sp: 50},
     weightkg: 20.2,
     abilities: {0: 'Lightning Rod'},
-    nfe: true
+    nfe: true,
   },
   'Gardevoir-Delta': {
     types: ['Electric', 'Ice'],
     bs: {hp: 68, at: 65, df: 65, sa: 125, sd: 115, sp: 80},
     weightkg: 48.4,
     abilities: {0: 'Lightning Rod'},
-    otherFormes: ['Gardevoir-Delta-Mega']
+    otherFormes: ['Gardevoir-Delta-Mega'],
   },
   'Gardevoir-Delta-Mega': {
     types: ['Electric', 'Ice'],
     bs: {hp: 68, at: 85, df: 65, sa: 165, sd: 135, sp: 100},
     weightkg: 48.4,
     abilities: {0: 'Lightning Rod'},
-    baseSpecies: 'Gardevoir-Delta'
+    baseSpecies: 'Gardevoir-Delta',
   },
   'Gallade-Delta': {
     types: ['Electric', 'Ice'],
     bs: {hp: 68, at: 125, df: 65, sa: 65, sd: 115, sp: 80},
     weightkg: 52,
     abilities: {0: 'Volt Absorb'},
-    otherFormes: ['Gallade-Delta-Mega']
+    otherFormes: ['Gallade-Delta-Mega'],
   },
   'Gallade-Delta-Mega': {
     types: ['Electric', 'Ice'],
     bs: {hp: 68, at: 165, df: 95, sa: 65, sd: 115, sp: 110},
     weightkg: 56.4,
     abilities: {0: 'Volt Absorb'},
-    baseSpecies: 'Gallade-Delta'
+    baseSpecies: 'Gallade-Delta',
   },
   'Sunkern-Delta': {
     types: ['Fire', 'Poison'],
     bs: {hp: 30, at: 30, df: 30, sa: 30, sd: 30, sp: 30},
     weightkg: 1.8,
     abilities: {0: 'Analytic'},
-    nfe: true
+    nfe: true,
   },
   'Sunflora-Delta': {
     types: ['Fire', 'Poison'],
     bs: {hp: 75, at: 75, df: 55, sa: 105, sd: 85, sp: 30},
     weightkg: 8.5,
     abilities: {0: 'Analytic'},
-    otherFormes: ['Sunflora-Delta-Mega']
+    otherFormes: ['Sunflora-Delta-Mega'],
   },
   'Sunflora-Delta-Mega': {
     types: ['Fire', 'Poison'],
     bs: {hp: 75, at: 85, df: 80, sa: 135, sd: 105, sp: 45},
     weightkg: 8.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Sunflora-Delta'
+    baseSpecies: 'Sunflora-Delta',
   },
   'Bergmite-Delta': {
     types: ['Rock'],
     bs: {hp: 55, at: 69, df: 85, sa: 32, sd: 35, sp: 28},
     weightkg: 99.5,
     abilities: {0: 'Solid Rock'},
-    nfe: true
+    nfe: true,
   },
   'Avalugg-Delta': {
     types: ['Rock', 'Dragon'],
@@ -8787,28 +8787,28 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 70, at: 110, df: 80, sa: 55, sd: 80, sp: 105},
     weightkg: 56,
     abilities: {0: 'Hustle'},
-    nfe: true
+    nfe: true,
   },
   'Scizor-Delta': {
     types: ['Ice', 'Fighting'],
     bs: {hp: 70, at: 130, df: 100, sa: 55, sd: 80, sp: 65},
     weightkg: 118,
     abilities: {0: 'Tough Claws'},
-    otherFormes: ['Scizor-Delta-Mega']
+    otherFormes: ['Scizor-Delta-Mega'],
   },
   'Scizor-Delta-Mega': {
     types: ['Ice', 'Fighting'],
     bs: {hp: 70, at: 150, df: 140, sa: 65, sd: 100, sp: 75},
     weightkg: 125,
     abilities: {0: 'Adaptability'},
-    baseSpecies: 'Scizor-Delta'
+    baseSpecies: 'Scizor-Delta',
   },
   'Scraggy-Delta': {
     types: ['Grass'],
     bs: {hp: 50, at: 75, df: 70, sa: 35, sd: 70, sp: 48},
     weightkg: 11.8,
     abilities: {0: 'Rough Skin'},
-    nfe: true
+    nfe: true,
   },
   'Scrafty-Delta': {
     types: ['Grass'],
@@ -8821,7 +8821,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 30, at: 30, df: 42, sa: 30, sd: 42, sp: 70},
     weightkg: 11,
     abilities: {0: 'Levitate'},
-    nfe: true
+    nfe: true,
   },
   'Vespiquen-Delta': {
     types: ['Steel', 'Fire'],
@@ -8834,7 +8834,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 65, df: 95, sa: 60, sd: 45, sp: 35},
     weightkg: 1,
     abilities: {0: 'Amplifier'},
-    nfe: true
+    nfe: true,
   },
   'Weezing-Delta': {
     types: ['Electric', 'Flying'],
@@ -8847,7 +8847,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 41, at: 50, df: 37, sa: 50, sd: 37, sp: 66},
     weightkg: 10.1,
     abilities: {0: 'Illusion'},
-    nfe: true
+    nfe: true,
   },
   'Liepard-Delta': {
     types: ['Ghost', 'Fairy'],
@@ -8860,42 +8860,42 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 50, df: 50, sa: 50, sd: 50, sp: 50},
     weightkg: 16.8,
     abilities: {0: 'Flash Fire'},
-    nfe: true
+    nfe: true,
   },
   'Glalie-Delta': {
     types: ['Fire', 'Rock'],
     bs: {hp: 80, at: 80, df: 80, sa: 80, sd: 80, sp: 80},
     weightkg: 42,
     abilities: {0: 'Rock Head'},
-    otherFormes: ['Glalie-Delta-Mega']
+    otherFormes: ['Glalie-Delta-Mega'],
   },
   'Glalie-Delta-Mega': {
     types: ['Fire', 'Rock'],
     bs: {hp: 80, at: 120, df: 80, sa: 120, sd: 80, sp: 100},
     weightkg: 350.2,
     abilities: {0: 'Reckless'},
-    baseSpecies: 'Glalie-Delta'
+    baseSpecies: 'Glalie-Delta',
   },
   'Froslass-Delta': {
     types: ['Fire'],
     bs: {hp: 70, at: 80, df: 70, sa: 80, sd: 70, sp: 110},
     weightkg: 26.6,
     abilities: {0: 'Flash Fire'},
-    otherFormes: ['Froslass-Delta-Mega']
+    otherFormes: ['Froslass-Delta-Mega'],
   },
   'Froslass-Delta-Mega': {
     types: ['Fire', 'Ghost'],
     bs: {hp: 70, at: 80, df: 85, sa: 120, sd: 105, sp: 120},
     weightkg: 26.6,
     abilities: {0: 'Magic Guard'},
-    baseSpecies: 'Froslass-Delta'
+    baseSpecies: 'Froslass-Delta',
   },
   'Phantump-Delta': {
     types: ['Fairy'],
     bs: {hp: 43, at: 70, df: 48, sa: 50, sd: 60, sp: 38},
     weightkg: 7,
     abilities: {0: 'Overcoat'},
-    nfe: true
+    nfe: true,
   },
   'Trevenant-Delta': {
     types: ['Fairy', 'Fighting'],
@@ -8908,14 +8908,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 65, df: 34, sa: 40, sd: 34, sp: 45},
     weightkg: 19,
     abilities: {0: 'Vampiric'},
-    nfe: true
+    nfe: true,
   },
   'Luxio-Delta': {
     types: ['Steel', 'Poison'],
     bs: {hp: 60, at: 85, df: 49, sa: 60, sd: 49, sp: 60},
     weightkg: 30.5,
     abilities: {0: 'Vampiric'},
-    nfe: true
+    nfe: true,
   },
   'Luxray-Delta': {
     types: ['Steel', 'Poison'],
@@ -8928,7 +8928,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 30, df: 35, sa: 45, sd: 40, sp: 55},
     weightkg: 8,
     abilities: {0: 'Chlorophyll'},
-    nfe: true
+    nfe: true,
   },
   'Noivern-Delta': {
     types: ['Grass', 'Steel'],
@@ -8941,14 +8941,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 30, df: 35, sa: 50, sd: 70, sp: 55},
     weightkg: 1.2,
     abilities: {0: 'Inner Focus'},
-    nfe: true
+    nfe: true,
   },
   'Roselia-Delta': {
     types: ['Dark', 'Fairy'],
     bs: {hp: 50, at: 60, df: 45, sa: 100, sd: 80, sp: 65},
     weightkg: 2,
     abilities: {0: 'Limber'},
-    nfe: true
+    nfe: true,
   },
   'Roserade-Delta': {
     types: ['Dark', 'Fairy'],
@@ -8961,7 +8961,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 90, at: 50, df: 34, sa: 60, sd: 44, sp: 70},
     weightkg: 1.2,
     abilities: {0: 'Flash Fire'},
-    nfe: true
+    nfe: true,
   },
   'Drifblim-Delta': {
     types: ['Fire', 'Flying'],
@@ -8974,7 +8974,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 80, at: 80, df: 50, sa: 40, sd: 50, sp: 25},
     weightkg: 30,
     abilities: {0: 'Sap Sipper'},
-    nfe: true
+    nfe: true,
   },
   'Muk-Delta': {
     types: ['Ground'],
@@ -8987,7 +8987,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 55, at: 45, df: 45, sa: 25, sd: 25, sp: 15},
     weightkg: 8.5,
     abilities: {0: 'Flash Fire'},
-    nfe: true
+    nfe: true,
   },
   'Quagsire-Delta': {
     types: ['Grass', 'Fire'],
@@ -9000,7 +9000,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 135, at: 85, df: 40, sa: 40, sd: 85, sp: 5},
     weightkg: 105,
     abilities: {0: 'Thick Fat'},
-    nfe: true
+    nfe: true,
   },
   'Snorlax-Delta': {
     types: ['Grass'],
@@ -9013,7 +9013,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 60, at: 60, df: 60, sa: 85, sd: 85, sp: 85},
     weightkg: 1,
     abilities: {0: 'Magic Guard'},
-    nfe: true
+    nfe: true,
   },
   'Mismagius-Delta': {
     types: ['Ice', 'Fairy'],
@@ -9026,42 +9026,42 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 39, at: 52, df: 43, sa: 60, sd: 50, sp: 65},
     weightkg: 7.9,
     abilities: {0: 'Lightning Rod'},
-    nfe: true
+    nfe: true,
   },
   'Quilava-Delta': {
     types: ['Electric'],
     bs: {hp: 58, at: 64, df: 58, sa: 80, sd: 65, sp: 80},
     weightkg: 28.5,
     abilities: {0: 'Lightning Rod'},
-    nfe: true
+    nfe: true,
   },
   'Typhlosion-Delta': {
     types: ['Electric', 'Steel'],
     bs: {hp: 78, at: 84, df: 78, sa: 109, sd: 85, sp: 100},
     weightkg: 159,
     abilities: {0: 'Lightning Rod'},
-    otherFormes: ['Typhlosion-Delta-Mega']
+    otherFormes: ['Typhlosion-Delta-Mega'],
   },
   'Typhlosion-Delta-Mega': {
     types: ['Electric', 'Steel'],
     bs: {hp: 78, at: 89, df: 88, sa: 160, sd: 110, sp: 109},
     weightkg: 159,
     abilities: {0: 'Supercell'},
-    baseSpecies: 'Typhlosion-Delta'
+    baseSpecies: 'Typhlosion-Delta',
   },
   'Treecko-Delta': {
     types: ['Normal', 'Fighting'],
     bs: {hp: 40, at: 45, df: 35, sa: 65, sd: 55, sp: 70},
     weightkg: 5,
     abilities: {0: 'Iron Fist'},
-    nfe: true
+    nfe: true,
   },
   'Grovyle-Delta': {
     types: ['Normal', 'Fighting'],
     bs: {hp: 50, at: 65, df: 45, sa: 85, sd: 65, sp: 95},
     weightkg: 21.6,
     abilities: {0: 'Iron Fist'},
-    nfe: true
+    nfe: true,
   },
   'Sceptile-Delta': {
     types: ['Dragon', 'Fighting'],
@@ -9074,14 +9074,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 45, df: 35, sa: 65, sd: 55, sp: 70},
     weightkg: 2.5,
     abilities: {0: 'Keen Eye'},
-    nfe: true
+    nfe: true,
   },
   'Combusken-Delta': {
     types: ['Psychic'],
     bs: {hp: 60, at: 85, df: 60, sa: 85, sd: 60, sp: 55},
     weightkg: 19.5,
     abilities: {0: 'Keen Eye'},
-    nfe: true
+    nfe: true,
   },
   'Blaziken-Delta': {
     types: ['Psychic', 'Flying'],
@@ -9094,14 +9094,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 55, at: 68, df: 64, sa: 45, sd: 55, sp: 31},
     weightkg: 10.2,
     abilities: {0: 'Water Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Grotle-Delta': {
     types: ['Water', 'Ground'],
     bs: {hp: 75, at: 89, df: 85, sa: 55, sd: 65, sp: 36},
     weightkg: 97,
     abilities: {0: 'Water Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Torterra-Delta': {
     types: ['Water', 'Ground'],
@@ -9114,14 +9114,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 45, df: 55, sa: 45, sd: 55, sp: 63},
     weightkg: 8.1,
     abilities: {0: 'Multiscale'},
-    nfe: true
+    nfe: true,
   },
   'Servine-Delta': {
     types: ['Water'],
     bs: {hp: 60, at: 60, df: 75, sa: 60, sd: 75, sp: 83},
     weightkg: 16,
     abilities: {0: 'Multiscale'},
-    nfe: true
+    nfe: true,
   },
   'Serperior-Delta': {
     types: ['Water', 'Dragon'],
@@ -9134,14 +9134,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 41, at: 56, df: 40, sa: 62, sd: 44, sp: 71},
     weightkg: 7,
     abilities: {0: 'Prankster'},
-    nfe: true
+    nfe: true,
   },
   'Frogadier-Delta': {
     types: ['Grass'],
     bs: {hp: 54, at: 63, df: 52, sa: 83, sd: 56, sp: 97},
     weightkg: 10.9,
     abilities: {0: 'Prankster'},
-    nfe: true
+    nfe: true,
   },
   'Greninja-Delta': {
     types: ['Grass', 'Fire'],
@@ -9154,7 +9154,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 10, at: 55, df: 25, sa: 35, sd: 45, sp: 95},
     weightkg: 0.8,
     abilities: {0: 'Fur Coat'},
-    nfe: true
+    nfe: true,
   },
   'Dugtrio-Delta': {
     types: ['Ice', 'Normal'],
@@ -9167,7 +9167,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 55, at: 70, df: 45, sa: 70, sd: 50, sp: 60},
     weightkg: 19,
     abilities: {0: 'Intimidate'},
-    nfe: true
+    nfe: true,
   },
   'Arcanine-Delta': {
     types: ['Normal', 'Dragon'],
@@ -9180,14 +9180,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 80, df: 100, sa: 30, sd: 30, sp: 20},
     weightkg: 20,
     abilities: {0: 'Sap Sipper'},
-    nfe: true
+    nfe: true,
   },
   'Graveler-Delta': {
     types: ['Psychic', 'Rock'],
     bs: {hp: 55, at: 95, df: 115, sa: 45, sd: 45, sp: 35},
     weightkg: 105,
     abilities: {0: 'Sap Sipper'},
-    nfe: true
+    nfe: true,
   },
   'Golem-Delta': {
     types: ['Psychic', 'Rock'],
@@ -9200,7 +9200,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 40, df: 35, sa: 50, sd: 100, sp: 70},
     weightkg: 45.5,
     abilities: {0: 'Overgrow'},
-    nfe: true
+    nfe: true,
   },
   'Tentacruel-Delta': {
     types: ['Grass', 'Poison'],
@@ -9213,7 +9213,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 35, at: 85, df: 45, sa: 35, sd: 35, sp: 75},
     weightkg: 39.2,
     abilities: {0: 'Compound Eyes'},
-    nfe: true
+    nfe: true,
   },
   'Dodrio-Delta': {
     types: ['Psychic'],
@@ -9226,7 +9226,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 65, at: 55, df: 115, sa: 100, sd: 40, sp: 60},
     weightkg: 35,
     abilities: {0: 'Dry Skin'},
-    nfe: true
+    nfe: true,
   },
   'Tangrowth-Delta': {
     types: ['Ground', 'Fighting'],
@@ -9245,7 +9245,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 30, at: 80, df: 90, sa: 55, sd: 45, sp: 55},
     weightkg: 11.5,
     abilities: {0: 'Tough Claws'},
-    nfe: true
+    nfe: true,
   },
   'Kabutops-Delta': {
     types: ['Bug', 'Dark'],
@@ -9258,14 +9258,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 41, at: 64, df: 45, sa: 50, sd: 50, sp: 50},
     weightkg: 3.3,
     abilities: {0: 'Volt Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Dragonair-Delta': {
     types: ['Electric', 'Water'],
     bs: {hp: 61, at: 84, df: 65, sa: 70, sd: 70, sp: 70},
     weightkg: 16.5,
     abilities: {0: 'Volt Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Dragonite-Delta': {
     types: ['Electric', 'Water'],
@@ -9278,7 +9278,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 60, at: 30, df: 30, sa: 36, sd: 56, sp: 50},
     weightkg: 21.2,
     abilities: {0: 'No Guard'},
-    nfe: true
+    nfe: true,
   },
   'Noctowl-Delta': {
     types: ['Ice', 'Flying'],
@@ -9291,21 +9291,21 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 75, at: 38, df: 38, sa: 56, sd: 56, sp: 67},
     weightkg: 12,
     abilities: {0: 'Levitate'},
-    nfe: true
+    nfe: true,
   },
   'Lanturn-Delta': {
     types: ['Ghost', 'Fire'],
     bs: {hp: 125, at: 58, df: 58, sa: 76, sd: 76, sp: 67},
     weightkg: 22.5,
     abilities: {0: 'Levitate'},
-    nfe: true
+    nfe: true,
   },
   'Aipom-Delta': {
     types: ['Ghost', 'Normal'],
     bs: {hp: 55, at: 70, df: 55, sa: 40, sd: 55, sp: 85},
     weightkg: 11.5,
     abilities: {0: 'Cloud Nine'},
-    nfe: true
+    nfe: true,
   },
   'Ambipom-Delta': {
     types: ['Ghost', 'Normal'],
@@ -9318,7 +9318,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 65, at: 65, df: 45, sa: 75, sd: 45, sp: 95},
     weightkg: 38,
     abilities: {0: 'Adaptability'},
-    nfe: true
+    nfe: true,
   },
   'Yanmega-Delta': {
     types: ['Grass', 'Flying'],
@@ -9331,14 +9331,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 70, at: 80, df: 65, sa: 90, sd: 65, sp: 85},
     weightkg: 41.5,
     abilities: {0: 'Intimidate'},
-    otherFormes: ['Girafarig-Delta-Mega']
+    otherFormes: ['Girafarig-Delta-Mega'],
   },
   'Girafarig-Delta-Mega': {
     types: ['Steel', 'Poison'],
     bs: {hp: 70, at: 80, df: 95, sa: 130, sd: 95, sp: 85},
     weightkg: 41.5,
     abilities: {0: 'Filter'},
-    baseSpecies: 'Girafarig-Delta'
+    baseSpecies: 'Girafarig-Delta',
   },
   'Dunsparce-Delta': {
     types: ['Water', 'Bug'],
@@ -9357,7 +9357,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 35, at: 65, df: 35, sa: 65, sd: 35, sp: 65},
     weightkg: 12,
     abilities: {0: 'Contrary'},
-    nfe: true
+    nfe: true,
   },
   'Octillery-Delta': {
     types: ['Fire'],
@@ -9370,14 +9370,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 63, df: 37, sa: 65, sd: 55, sp: 95},
     weightkg: 23.5,
     abilities: {0: 'Battle Armor'},
-    nfe: true
+    nfe: true,
   },
   'Electabuzz-Delta': {
     types: ['Rock'],
     bs: {hp: 65, at: 83, df: 57, sa: 95, sd: 85, sp: 105},
     weightkg: 30,
     abilities: {0: 'Battle Armor'},
-    nfe: true
+    nfe: true,
   },
   'Electivire-Delta': {
     types: ['Rock', 'Dragon'],
@@ -9390,14 +9390,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 75, df: 37, sa: 70, sd: 55, sp: 83},
     weightkg: 21.4,
     abilities: {0: 'Swift Swim'},
-    nfe: true
+    nfe: true,
   },
   'Magmar-Delta': {
     types: ['Water'],
     bs: {hp: 65, at: 95, df: 57, sa: 100, sd: 85, sp: 93},
     weightkg: 44.5,
     abilities: {0: 'Swift Swim'},
-    nfe: true
+    nfe: true,
   },
   'Magmortar-Delta': {
     types: ['Water', 'Steel'],
@@ -9410,14 +9410,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 30, df: 30, sa: 40, sd: 50, sp: 30},
     weightkg: 2.6,
     abilities: {0: 'Unaware'},
-    nfe: true
+    nfe: true,
   },
   'Lombre-Delta': {
     types: ['Psychic', 'Water'],
     bs: {hp: 60, at: 50, df: 50, sa: 60, sd: 70, sp: 50},
     weightkg: 32.5,
     abilities: {0: 'Unaware'},
-    nfe: true
+    nfe: true,
   },
   'Ludicolo-Delta': {
     types: ['Psychic', 'Water'],
@@ -9430,14 +9430,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 40, df: 50, sa: 30, sd: 30, sp: 30},
     weightkg: 4,
     abilities: {0: 'Volt Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Nuzleaf-Delta': {
     types: ['Electric'],
     bs: {hp: 70, at: 70, df: 40, sa: 60, sd: 40, sp: 60},
     weightkg: 28,
     abilities: {0: 'Volt Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Shiftry-Delta': {
     types: ['Electric'],
@@ -9450,42 +9450,42 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 75, df: 75, sa: 65, sd: 65, sp: 50},
     weightkg: 11,
     abilities: {0: 'Solid Rock'},
-    otherFormes: ['Sableye-Delta-Mega']
+    otherFormes: ['Sableye-Delta-Mega'],
   },
   'Sableye-Delta-Mega': {
     types: ['Fire', 'Rock'],
     bs: {hp: 50, at: 85, df: 125, sa: 85, sd: 115, sp: 20},
     weightkg: 161,
     abilities: {0: 'Dry Skin'},
-    baseSpecies: 'Sableye-Delta'
+    baseSpecies: 'Sableye-Delta',
   },
   'Mawile-Delta': {
     types: ['Grass', 'Dark'],
     bs: {hp: 50, at: 85, df: 85, sa: 55, sd: 55, sp: 50},
     weightkg: 11.5,
     abilities: {0: 'Serene Grace'},
-    otherFormes: ['Mawile-Delta-Mega']
+    otherFormes: ['Mawile-Delta-Mega'],
   },
   'Mawile-Delta-Mega': {
     types: ['Grass', 'Dark'],
     bs: {hp: 50, at: 105, df: 125, sa: 55, sd: 95, sp: 50},
     weightkg: 23.5,
     abilities: {0: 'Arena Trap'},
-    baseSpecies: 'Mawile-Delta'
+    baseSpecies: 'Mawile-Delta',
   },
   'Aron-Delta': {
     types: ['Fire', 'Steel'],
     bs: {hp: 50, at: 70, df: 100, sa: 40, sd: 40, sp: 30},
     weightkg: 60,
     abilities: {0: 'Drought'},
-    nfe: true
+    nfe: true,
   },
   'Lairon-Delta': {
     types: ['Fire', 'Steel'],
     bs: {hp: 60, at: 90, df: 140, sa: 50, sd: 50, sp: 40},
     weightkg: 120,
     abilities: {0: 'Drought'},
-    nfe: true
+    nfe: true,
   },
   'Aggron-Delta': {
     types: ['Fire', 'Steel'],
@@ -9498,41 +9498,42 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 30, at: 40, df: 55, sa: 40, sd: 55, sp: 60},
     weightkg: 11.2,
     abilities: {0: 'Athenian'},
-    nfe: true
+    nfe: true,
   },
   'Medicham-Delta': {
     types: ['Fairy', 'Ground'],
     bs: {hp: 60, at: 60, df: 75, sa: 60, sd: 75, sp: 80},
     weightkg: 31.5,
     abilities: {0: 'Athenian'},
-    otherFormes: ['Medicham-Delta-Mega']
+    otherFormes: ['Medicham-Delta-Mega'],
   },
   'Medicham-Delta-Mega': {
     types: ['Fairy', 'Ground'],
     bs: {hp: 60, at: 100, df: 85, sa: 80, sd: 85, sp: 100},
     weightkg: 31.5,
     abilities: {0: 'Athenian'},
-    baseSpecies: 'Medicham-Delta'
+    baseSpecies: 'Medicham-Delta',
   },
   'Numel-Delta': {
     types: ['Poison'],
     bs: {hp: 60, at: 60, df: 40, sa: 65, sd: 45, sp: 35},
     weightkg: 24,
     abilities: {0: 'Corrosion'},
-    nfe: true
+    nfe: true,
   },
   'Camerupt-Delta': {
     types: ['Poison'],
     bs: {hp: 70, at: 100, df: 70, sa: 105, sd: 75, sp: 40},
     weightkg: 220,
     abilities: {0: 'Corrosion'},
+    otherFormes: ['Camerupt-Delta-Mega'],
   },
   'Camerupt-Delta-Mega': {
     types: ['Poison'],
     bs: {hp: 70, at: 120, df: 100, sa: 145, sd: 105, sp: 20},
     weightkg: 320.5,
     abilities: {0: 'Intoxicate'},
-    baseSpecies: 'Camerupt-Delta'
+    baseSpecies: 'Camerupt-Delta',
   },
   'Plusle-Delta': {
     types: ['Fire', 'Fairy'],
@@ -9551,7 +9552,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 130, at: 70, df: 35, sa: 70, sd: 35, sp: 60},
     weightkg: 120,
     abilities: {0: 'Refrigerate'},
-    nfe: true
+    nfe: true,
   },
   'Wailord-Delta': {
     types: ['Ice', 'Flying'],
@@ -9564,28 +9565,28 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 20, at: 15, df: 20, sa: 10, sd: 55, sp: 80},
     weightkg: 7.4,
     abilities: {0: 'Rattled'},
-    nfe: true
+    nfe: true,
   },
   'Milotic-Delta': {
     types: ['Ghost'],
     bs: {hp: 95, at: 60, df: 79, sa: 100, sd: 125, sp: 81},
     weightkg: 162,
     abilities: {0: 'Defiant'},
-    otherFormes: ['Milotic-Delta-Mega']
+    otherFormes: ['Milotic-Delta-Mega'],
   },
   'Milotic-Delta-Mega': {
     types: ['Ghost'],
     bs: {hp: 95, at: 70, df: 109, sa: 130, sd: 155, sp: 81},
     weightkg: 162,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Milotic-Delta'
+    baseSpecies: 'Milotic-Delta',
   },
   'Clamperl-Delta': {
     types: ['Dragon'],
     bs: {hp: 35, at: 64, df: 85, sa: 74, sd: 55, sp: 32},
     weightkg: 52.5,
     abilities: {0: 'Battle Armor'},
-    nfe: true
+    nfe: true,
   },
   'Huntail-Delta': {
     types: ['Dragon', 'Dark'],
@@ -9604,103 +9605,105 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 40, at: 55, df: 80, sa: 35, sd: 60, sp: 30},
     weightkg: 47.5,
     abilities: {0: 'Poison Heal'},
-    nfe: true
+    nfe: true,
   },
   'Metang-Delta-S': {
     types: ['Ground', 'Bug'],
     bs: {hp: 60, at: 75, df: 100, sa: 55, sd: 80, sp: 50},
     weightkg: 101.3,
     abilities: {0: 'Poison Heal'},
-    nfe: true
+    nfe: true,
   },
   'Metagross-Delta-S': {
     types: ['Ground', 'Bug'],
     bs: {hp: 80, at: 135, df: 130, sa: 95, sd: 90, sp: 70},
     weightkg: 224,
     abilities: {0: 'Poison Heal'},
+    otherFormes: ['Metagross-Delta-S-Mega'],
   },
   'Metagross-Delta-S-Mega': {
     types: ['Ground', 'Bug'],
     bs: {hp: 80, at: 145, df: 150, sa: 105, sd: 110, sp: 110},
     weightkg: 942.9,
     abilities: {0: 'Mold Breaker'},
-    baseSpecies: 'Metagross-Delta-S'
+    baseSpecies: 'Metagross-Delta-S',
   },
   'Beldum-Delta-R': {
     types: ['Rock', 'Grass'],
     bs: {hp: 40, at: 55, df: 80, sa: 35, sd: 60, sp: 30},
     weightkg: 95.2,
     abilities: {0: 'Rock Head'},
-    nfe: true
+    nfe: true,
   },
   'Metang-Delta-R': {
     types: ['Rock', 'Grass'],
     bs: {hp: 60, at: 75, df: 100, sa: 55, sd: 80, sp: 50},
     weightkg: 202.5,
     abilities: {0: 'Rock Head'},
-    nfe: true
+    nfe: true,
   },
   'Metagross-Delta-R': {
     types: ['Rock', 'Grass'],
     bs: {hp: 80, at: 135, df: 130, sa: 95, sd: 90, sp: 70},
     weightkg: 550,
     abilities: {0: 'Rock Head'},
+    otherFormes: ['Metagross-Delta-R-Mega'],
   },
   'Metagross-Delta-R-Mega': {
     types: ['Rock', 'Grass'],
     bs: {hp: 80, at: 145, df: 150, sa: 105, sd: 110, sp: 110},
     weightkg: 942.9,
     abilities: {0: 'Rock Head'},
-    baseSpecies: 'Metagross-Delta-R'
+    baseSpecies: 'Metagross-Delta-R',
   },
   'Buneary-Delta': {
     types: ['Fighting'],
     bs: {hp: 55, at: 66, df: 44, sa: 44, sd: 56, sp: 85},
     weightkg: 5.5,
     abilities: {0: 'Frisk'},
-    nfe: true
+    nfe: true,
   },
   'Lopunny-Delta': {
     types: ['Fighting'],
     bs: {hp: 65, at: 76, df: 84, sa: 54, sd: 96, sp: 105},
     weightkg: 33.3,
     abilities: {0: 'Unburden'},
-    otherFormes: ['Lopunny-Delta-Mega']
+    otherFormes: ['Lopunny-Delta-Mega'],
   },
   'Lopunny-Delta-Mega': {
     types: ['Fighting', 'Psychic'],
     bs: {hp: 65, at: 136, df: 94, sa: 54, sd: 96, sp: 135},
     weightkg: 28.3,
     abilities: {0: 'Hyper Cutter'},
-    baseSpecies: 'Lopunny-delta'
+    baseSpecies: 'Lopunny-delta',
   },
   'Riolu-Delta': {
     types: ['Dark'],
     bs: {hp: 40, at: 70, df: 40, sa: 35, sd: 40, sp: 60},
     weightkg: 20.2,
     abilities: {0: 'Justified'},
-    nfe: true
+    nfe: true,
   },
   'Lucario-Delta': {
     types: ['Dark', 'Ground'],
     bs: {hp: 70, at: 110, df: 70, sa: 115, sd: 70, sp: 90},
     weightkg: 54,
     abilities: {0: 'Justified'},
-    otherFormes: ['Lucario-Delta-Mega']
+    otherFormes: ['Lucario-Delta-Mega'],
   },
   'Lucario-Delta-Mega': {
     types: ['Dark', 'Ground'],
     bs: {hp: 70, at: 145, df: 88, sa: 140, sd: 70, sp: 112},
     weightkg: 57.5,
     abilities: {0: 'Defiant'},
-    baseSpecies: 'Lucario-Delta'
+    baseSpecies: 'Lucario-Delta',
   },
   'Croagunk-Delta': {
     types: ['Fire'],
     bs: {hp: 48, at: 61, df: 40, sa: 61, sd: 40, sp: 50},
     weightkg: 23,
     abilities: {0: 'Hustle'},
-    nfe: true
+    nfe: true,
   },
   'Toxicroak-Delta': {
     types: ['Fire'],
@@ -9713,14 +9716,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 30, at: 45, df: 59, sa: 30, sd: 39, sp: 57},
     weightkg: 5.3,
     abilities: {0: 'Mold Breaker'},
-    nfe: true
+    nfe: true,
   },
   'Whirlipede-Delta': {
     types: ['Rock', 'Fire'],
     bs: {hp: 40, at: 55, df: 99, sa: 40, sd: 79, sp: 47},
     weightkg: 58.5,
     abilities: {0: 'Mold Breaker'},
-    nfe: true
+    nfe: true,
   },
   'Scolipede-Delta': {
     types: ['Rock', 'Fire'],
@@ -9733,7 +9736,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 35, df: 50, sa: 70, sd: 50, sp: 30},
     weightkg: 6.6,
     abilities: {0: 'Serene Grace'},
-    nfe: true
+    nfe: true,
   },
   'Lilligant-Delta-F': {
     types: ['Fairy', 'Flying'],
@@ -9746,7 +9749,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 35, df: 50, sa: 70, sd: 50, sp: 30},
     weightkg: 6.6,
     abilities: {0: 'Storm Drain'},
-    nfe: true
+    nfe: true,
   },
   'Lilligant-Delta-W': {
     types: ['Water', 'Fire'],
@@ -9759,14 +9762,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 30, df: 40, sa: 105, sd: 50, sp: 20},
     weightkg: 1,
     abilities: {0: 'Levitate'},
-    nfe: true
+    nfe: true,
   },
   'Duosion-Delta': {
     types: ['Ghost', 'Rock'],
     bs: {hp: 65, at: 40, df: 50, sa: 125, sd: 60, sp: 30},
     weightkg: 8,
     abilities: {0: 'Levitate'},
-    nfe: true
+    nfe: true,
   },
   'Reuniclus-Delta': {
     types: ['Ghost', 'Rock'],
@@ -9779,7 +9782,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 70, at: 90, df: 45, sa: 15, sd: 45, sp: 50},
     weightkg: 37.5,
     abilities: {0: 'Unnerve'},
-    nfe: true
+    nfe: true,
   },
   'Darmanitan-Delta': {
     types: ['Dark', 'Ghost'],
@@ -9798,7 +9801,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 65, df: 85, sa: 35, sd: 35, sp: 55},
     weightkg: 14.5,
     abilities: {0: 'Harvest'},
-    nfe: true
+    nfe: true,
   },
   'Crustle-Delta-B': {
     types: ['Grass', 'Poison'],
@@ -9811,7 +9814,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 65, df: 85, sa: 35, sd: 35, sp: 55},
     weightkg: 14.5,
     abilities: {0: 'Simple'},
-    nfe: true
+    nfe: true,
   },
   'Crustle-Delta-C': {
     types: ['Fairy', 'Normal'],
@@ -9824,7 +9827,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 38, at: 30, df: 85, sa: 55, sd: 65, sp: 30},
     weightkg: 1.5,
     abilities: {0: 'Infiltrator'},
-    nfe: true
+    nfe: true,
   },
   'Cofagrigus-Delta': {
     types: ['Steel', 'Poison'],
@@ -9843,7 +9846,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 75, df: 45, sa: 40, sd: 45, sp: 60},
     weightkg: 5.9,
     abilities: {0: 'Simple'},
-    nfe: true
+    nfe: true,
   },
   'Escavalier-Delta': {
     types: ['Fairy'],
@@ -9856,7 +9859,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 69, at: 55, df: 45, sa: 55, sd: 55, sp: 15},
     weightkg: 1,
     abilities: {0: 'Intimidate'},
-    nfe: true
+    nfe: true,
   },
   'Amoonguss-Delta': {
     types: ['Ghost', 'Dark'],
@@ -9869,14 +9872,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 50, at: 30, df: 55, sa: 65, sd: 55, sp: 20},
     weightkg: 3.1,
     abilities: {0: 'Fairy Aura'},
-    nfe: true
+    nfe: true,
   },
   'Lampent-Delta': {
     types: ['Fairy', 'Fire'],
     bs: {hp: 60, at: 40, df: 60, sa: 95, sd: 60, sp: 55},
     weightkg: 13,
     abilities: {0: 'Fairy Aura'},
-    nfe: true
+    nfe: true,
   },
   'Chandelure-Delta': {
     types: ['Fairy', 'Fire'],
@@ -9889,14 +9892,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 46, at: 87, df: 60, sa: 30, sd: 40, sp: 57},
     weightkg: 18,
     abilities: {0: 'Strong Jaw'},
-    nfe: true
+    nfe: true,
   },
   'Fraxure-Delta': {
     types: ['Water'],
     bs: {hp: 66, at: 117, df: 70, sa: 40, sd: 50, sp: 67},
     weightkg: 36,
     abilities: {0: 'Strong Jaw'},
-    nfe: true
+    nfe: true,
   },
   'Haxorus-Delta': {
     types: ['Water', 'Steel'],
@@ -9909,7 +9912,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 59, at: 74, df: 50, sa: 35, sd: 50, sp: 35},
     weightkg: 92,
     abilities: {0: 'Iron Fist'},
-    nfe: true
+    nfe: true,
   },
   'Golurk-Delta': {
     types: ['Fighting', 'Steel'],
@@ -9928,14 +9931,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 52, at: 65, df: 50, sa: 45, sd: 50, sp: 38},
     weightkg: 17.3,
     abilities: {0: 'Corrosion'},
-    nfe: true
+    nfe: true,
   },
   'Zweilous-Delta': {
     types: ['Ground', 'Poison'],
     bs: {hp: 72, at: 85, df: 70, sa: 65, sd: 70, sp: 58},
     weightkg: 50,
     abilities: {0: 'Corrosion'},
-    nfe: true
+    nfe: true,
   },
   'Hydreigon-Delta': {
     types: ['Ground', 'Poison'],
@@ -9948,28 +9951,28 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 55, at: 85, df: 55, sa: 50, sd: 55, sp: 60},
     weightkg: 28.8,
     abilities: {0: 'Defiant'},
-    nfe: true
+    nfe: true,
   },
   'Volcarona-Delta': {
     types: ['Dark', 'Poison'],
     bs: {hp: 85, at: 60, df: 65, sa: 135, sd: 105, sp: 100},
     weightkg: 46,
     abilities: {0: 'Levitate'},
-    otherFormes: ['Volcarona-Delta-Armor']
+    otherFormes: ['Volcarona-Delta-Armor'],
   },
   'Volcarona-Delta-Armor': {
     types: ['Dark', 'Poison'],
     bs: {hp: 85, at: 60, df: 90, sa: 135, sd: 130, sp: 100},
     weightkg: 46,
     abilities: {0: 'Levitate'},
-    baseSpecies: 'Volcarona-Delta'
+    baseSpecies: 'Volcarona-Delta',
   },
   'Amaura-Delta': {
     types: ['Grass', 'Water'],
     bs: {hp: 77, at: 59, df: 50, sa: 67, sd: 63, sp: 46},
     weightkg: 25.2,
     abilities: {0: 'Phototroph'},
-    nfe: true
+    nfe: true,
   },
   'Aurorus-Delta': {
     types: ['Grass', 'Water'],
@@ -9982,14 +9985,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 45, at: 50, df: 35, sa: 55, sd: 75, sp: 40},
     weightkg: 2.8,
     abilities: {0: 'Water Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Sliggoo-Delta': {
     types: ['Ground', 'Water'],
     bs: {hp: 68, at: 75, df: 53, sa: 83, sd: 113, sp: 60},
     weightkg: 17.5,
     abilities: {0: 'Water Absorb'},
-    nfe: true
+    nfe: true,
   },
   'Goodra-Delta': {
     types: ['Ground', 'Water'],
@@ -10020,28 +10023,28 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 100, at: 128, df: 90, sa: 77, sd: 77, sp: 128},
     weightkg: 6.5,
     abilities: {0: 'Filter'},
-    otherFormes: ['Meloetta-Delta-Magician']
+    otherFormes: ['Meloetta-Delta-Magician'],
   },
   'Meloetta-Delta-Magician': {
     types: ['Dark', 'Psychic'],
     bs: {hp: 100, at: 77, df: 77, sa: 128, sd: 128, sp: 90},
     weightkg: 6.5,
     abilities: {0: 'Filter'},
-    baseSpecies: 'Meloetta-Delta-Mime'
+    baseSpecies: 'Meloetta-Delta-Mime',
   },
   'Hoopa-Delta': {
     types: ['Flying'],
     bs: {hp: 80, at: 110, df: 60, sa: 150, sd: 130, sp: 70},
     weightkg: 9,
     abilities: {0: 'Cloud Nine'},
-    otherFormes: ['Hoopa-Delta-Unbound']
+    otherFormes: ['Hoopa-Delta-Unbound'],
   },
   'Hoopa-Delta-Unbound': {
     types: ['Flying', 'Fairy'],
     bs: {hp: 80, at: 160, df: 60, sa: 170, sd: 130, sp: 80},
     weightkg: 9,
     abilities: {0: 'Cloud Nine'},
-    baseSpecies: 'Hoopa-Delta'
+    baseSpecies: 'Hoopa-Delta',
   },
   'UFI': {
     types: ['Psychic', 'Electric'],
@@ -10054,238 +10057,238 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 90, at: 155, df: 120, sa: 70, sd: 105, sp: 70},
     weightkg: 54,
     abilities: {0: 'No Guard'},
-    baseSpecies: 'Poliwrath'
+    baseSpecies: 'Poliwrath',
   },
   'Marowak-Mega': {
     types: ['Ground'],
     bs: {hp: 60, at: 135, df: 120, sa: 50, sd: 100, sp: 60},
     weightkg: 45,
     abilities: {0: 'Parental Bond'},
-    baseSpecies: 'Marowak'
+    baseSpecies: 'Marowak',
   },
   'Politoed-Mega': {
     types: ['Water'],
     bs: {hp: 90, at: 75, df: 95, sa: 120, sd: 140, sp: 80},
     weightkg: 33.9,
     abilities: {0: 'Drizzle'},
-    baseSpecies: 'Politoed'
+    baseSpecies: 'Politoed',
   },
   'Sudowoodo-Mega': {
     types: ['Rock', 'Grass'],
     bs: {hp: 70, at: 140, df: 145, sa: 40, sd: 95, sp: 20},
     weightkg: 38,
     abilities: {0: 'Analytic'},
-    baseSpecies: 'Sudowoodo'
+    baseSpecies: 'Sudowoodo',
   },
   'Sunflora-Mega': {
     types: ['Grass', 'Fire'],
     bs: {hp: 75, at: 85, df: 80, sa: 135, sd: 105, sp: 45},
     weightkg: 8.5,
     abilities: {0: 'Drought'},
-    baseSpecies: 'Sunflora'
+    baseSpecies: 'Sunflora',
   },
   'Girafarig-Mega': {
     types: ['Normal', 'Psychic'],
     bs: {hp: 70, at: 80, df: 95, sa: 130, sd: 95, sp: 85},
     weightkg: 41.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Girafarig'
+    baseSpecies: 'Girafarig',
   },
   'Steelix-Mega-Fire': {
     types: ['Steel', 'Fire'],
     bs: {hp: 75, at: 135, df: 225, sa: 65, sd: 55, sp: 55},
     weightkg: 740,
     abilities: {0: 'Foundry'},
-    baseSpecies: 'Steelix'
+    baseSpecies: 'Steelix',
   },
   'Magcargo-Mega': {
     types: ['Fire'],
     bs: {hp: 60, at: 70, df: 100, sa: 150, sd: 100, sp: 50},
     weightkg: 55,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Magcargo'
+    baseSpecies: 'Magcargo',
   },
   'Donphan-Mega': {
     types: ['Ground'],
     bs: {hp: 90, at: 150, df: 150, sa: 60, sd: 100, sp: 50},
     weightkg: 120,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Donphan'
+    baseSpecies: 'Donphan',
   },
   'Miltank-Mega': {
     types: ['Normal'],
     bs: {hp: 95, at: 125, df: 145, sa: 40, sd: 115, sp: 70},
     weightkg: 75.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Miltank'
+    baseSpecies: 'Miltank',
   },
   'Shiftry-Mega': {
     types: ['Grass', 'Dark'],
     bs: {hp: 90, at: 135, df: 70, sa: 125, sd: 60, sp: 100},
     weightkg: 59.6,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Shiftry'
+    baseSpecies: 'Shiftry',
   },
   'Flygon-Mega': {
     types: ['Bug', 'Dragon'],
     bs: {hp: 80, at: 110, df: 80, sa: 140, sd: 80, sp: 130},
     weightkg: 82,
     abilities: {0: 'Amplifier'},
-    baseSpecies: 'Flygon'
+    baseSpecies: 'Flygon',
   },
   'Cacturne-Mega': {
     types: ['Grass', 'Dark'],
     bs: {hp: 70, at: 145, df: 70, sa: 145, sd: 70, sp: 75},
     weightkg: 77.4,
     abilities: {0: 'Sand Rush'},
-    baseSpecies: 'Cacturne'
+    baseSpecies: 'Cacturne',
   },
   'Jirachi-Mega': {
     types: ['Steel', 'Psychic'],
     bs: {hp: 100, at: 100, df: 140, sa: 130, sd: 115, sp: 115},
     weightkg: 1.1,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Jirachi'
+    baseSpecies: 'Jirachi',
   },
   'Crawdaunt-Mega': {
     types: ['Water', 'Dark'],
     bs: {hp: 63, at: 145, df: 95, sa: 100, sd: 85, sp: 80},
     weightkg: 32.8,
     abilities: {0: 'Adaptability'},
-    baseSpecies: 'Crawdaunt'
+    baseSpecies: 'Crawdaunt',
   },
   'Milotic-Mega': {
     types: ['Water', 'Fairy'],
     bs: {hp: 95, at: 70, df: 109, sa: 130, sd: 155, sp: 81},
     weightkg: 162,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Milotic'
+    baseSpecies: 'Milotic',
   },
   'Chatot-Mega': {
     types: ['Normal', 'Flying'],
     bs: {hp: 76, at: 65, df: 55, sa: 147, sd: 52, sp: 116},
     weightkg: 1.9,
     abilities: {0: 'Amplifier'},
-    baseSpecies: 'Chatot'
+    baseSpecies: 'Chatot',
   },
   'Spiritomb-Mega': {
     types: ['Ghost', 'Dark'],
     bs: {hp: 50, at: 142, df: 128, sa: 133, sd: 112, sp: 20},
     weightkg: 108,
     abilities: {0: 'Tough Claws'},
-    baseSpecies: 'Spiritomb'
+    baseSpecies: 'Spiritomb',
   },
   'Froslass-Mega': {
     types: ['Ice', 'Ghost'],
     bs: {hp: 70, at: 80, df: 85, sa: 120, sd: 105, sp: 120},
     weightkg: 26.6,
     abilities: {0: 'Fur Coat'},
-    baseSpecies: 'Froslass'
+    baseSpecies: 'Froslass',
   },
   'Zebstrika-Mega': {
     types: ['Electric', 'Fairy'],
     bs: {hp: 75, at: 100, df: 63, sa: 135, sd: 83, sp: 141},
     weightkg: 79.5,
     abilities: {0: 'Competitive'},
-    baseSpecies: 'Zebstrika'
+    baseSpecies: 'Zebstrika',
   },
   'Zoroark-Mega': {
     types: ['Dark'],
     bs: {hp: 60, at: 130, df: 60, sa: 145, sd: 90, sp: 125},
     weightkg: 81.1,
     abilities: {0: 'Trace'},
-    baseSpecies: 'Zoroark'
+    baseSpecies: 'Zoroark',
   },
   'Reuniclus-Mega': {
     types: ['Psychic'],
     bs: {hp: 110, at: 80, df: 65, sa: 160, sd: 90, sp: 80},
     weightkg: 20.1,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Reuniclus'
+    baseSpecies: 'Reuniclus',
   },
   'Gothitelle-Mega': {
     types: ['Psychic', 'Dark'],
     bs: {hp: 70, at: 55, df: 125, sa: 125, sd: 150, sp: 65},
     weightkg: 44,
     abilities: {0: 'Ethereal Shroud'},
-    baseSpecies: 'Gothitelle'
+    baseSpecies: 'Gothitelle',
   },
   'Cryogonal-Mega': {
     types: ['Ice'],
     bs: {hp: 80, at: 50, df: 65, sa: 115, sd: 150, sp: 135},
     weightkg: 148,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Cryogonal'
+    baseSpecies: 'Cryogonal',
   },
   'Haxorus-Mega': {
     types: ['Dragon', 'Steel'],
     bs: {hp: 76, at: 182, df: 130, sa: 80, sd: 90, sp: 82},
     weightkg: 105.5,
     abilities: {0: 'Weak Armor'},
-    baseSpecies: 'Haxorus'
+    baseSpecies: 'Haxorus',
   },
   'Hydreigon-Mega': {
     types: ['Dark', 'Dragon'],
     bs: {hp: 92, at: 130, df: 105, sa: 170, sd: 105, sp: 98},
     weightkg: 160,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Hydreigon'
+    baseSpecies: 'Hydreigon',
   },
   'Bisharp-Mega': {
     types: ['Dark', 'Steel'],
     bs: {hp: 65, at: 145, df: 125, sa: 60, sd: 85, sp: 105},
     weightkg: 70,
     abilities: {0: 'Moxie'},
-    baseSpecies: 'Bisharp'
+    baseSpecies: 'Bisharp',
   },
   'Stunfisk-Mega': {
     types: ['Ground', 'Electric'],
     bs: {hp: 109, at: 76, df: 104, sa: 91, sd: 134, sp: 57},
     weightkg: 11,
     abilities: {0: 'Athenian'},
-    baseSpecies: 'Stunfisk'
+    baseSpecies: 'Stunfisk',
   },
   'Meganium-Mega': {
     types: ['Grass', 'Fairy'],
     bs: {hp: 80, at: 82, df: 140, sa: 83, sd: 140, sp: 100},
     weightkg: 100.5,
     abilities: {0: 'Magic Bounce'},
-    baseSpecies: 'Meganium'
+    baseSpecies: 'Meganium',
   },
   'Feraligatr-Mega': {
     types: ['Water'],
     bs: {hp: 85, at: 140, df: 110, sa: 89, sd: 103, sp: 103},
     weightkg: 88.8,
     abilities: {0: 'Tough Claws'},
-    baseSpecies: 'Feraligatr'
+    baseSpecies: 'Feraligatr',
   },
   'Typhlosion-Mega': {
     types: ['Fire'],
     bs: {hp: 78, at: 89, df: 88, sa: 160, sd: 110, sp: 109},
     weightkg: 79.5,
     abilities: {0: 'Custom Ability'},
-    baseSpecies: 'Typhlosion'
+    baseSpecies: 'Typhlosion',
   },
   'Flygon-Armor': {
     types: ['Ground', 'Dragon'],
     bs: {hp: 80, at: 100, df: 103, sa: 80, sd: 103, sp: 100},
     weightkg: 82,
     abilities: {0: 'Levitate'},
-    baseSpecies: 'Flygon'
+    baseSpecies: 'Flygon',
   },
   'Tyranitar-Armor': {
     types: ['Rock', 'Dark'],
     bs: {hp: 100, at: 134, df: 143, sa: 95, sd: 130, sp: 61},
     weightkg: 202,
     abilities: {0: 'Sand Stream'},
-    baseSpecies: 'Tyranitar'
+    baseSpecies: 'Tyranitar',
   },
   'Leavanny-Armor': {
     types: ['Bug', 'Grass'],
     bs: {hp: 75, at: 103, df: 112, sa: 70, sd: 98, sp: 92},
     weightkg: 20.5,
     abilities: {0: 'Swarm'},
-    baseSpecies: 'Leavanny'
+    baseSpecies: 'Leavanny',
   }
 };
 
