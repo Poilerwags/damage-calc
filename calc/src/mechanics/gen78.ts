@@ -34,6 +34,7 @@ import {
   getFinalDamage,
   getModifiedStat,
   getMoveEffectiveness,
+  getShellSideArmCategory,
   getWeightFactor,
   handleFixedDamageMoves,
   isGrounded,
@@ -772,9 +773,14 @@ export function calculateSMSS(
     move.category = attackSource.stats.atk > attackSource.stats.spa ? 'Physical' : 'Special';
   }
   const attackStat =
-    (move.named('Shell Side Arm') && defender.stats.def < defender.stats.spd) ? 'atk'
-    : move.named('Body Press') ? 'def'
-    : move.category === 'Special' ? 'spa' : 'atk';
+    move.named('Shell Side Arm') &&
+    getShellSideArmCategory(attacker, defender) === 'Physical'
+      ? 'atk'
+      : move.named('Body Press')
+        ? 'def'
+        : move.category === 'Special'
+          ? 'spa'
+          : 'atk';
   desc.attackEVs =
     move.named('Foul Play')
       ? getEVDescriptionText(gen, defender, attackStat, defender.nature)
@@ -905,7 +911,7 @@ export function calculateSMSS(
 
   let defense: number;
   const hitsPhysical = move.defensiveCategory === 'Physical' ||
-    (move.named('Shell Side Arm') && defender.stats.def < defender.stats.spd);
+    (move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Physical');
   const defenseStat = hitsPhysical ? 'def' : 'spd';
   desc.defenseEVs = getEVDescriptionText(gen, defender, defenseStat, defender.nature);
   if (defender.boosts[defenseStat] === 0 ||
