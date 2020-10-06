@@ -7468,6 +7468,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Darumaka: {otherFormes: ['Darumaka-Galar']},
   Eevee: {otherFormes: ['Eevee-Gmax']},
+  Equilibra: {bs: {sa: 121}},
   'Farfetch\u2019d': {otherFormes: ['Farfetch\u2019d-Galar']},
   Garbodor: {otherFormes: ['Garbodor-Gmax']},
   Gengar: {otherFormes: ['Gengar-Gmax', 'Gengar-Mega']},

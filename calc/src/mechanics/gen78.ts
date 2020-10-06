@@ -400,7 +400,7 @@ export function calculateSMSS(
     desc.moveBP = basePower;
     break;
   case 'Rising Voltage':
-    basePower = move.bp * (field.hasTerrain('Electric') ? 2 : 1);
+    basePower = isGrounded(defender, field) && field.hasTerrain('Electric') ? move.bp * 2 : move.bp;
     desc.moveBP = basePower;
     break;
   case 'Gyro Ball':
@@ -886,7 +886,7 @@ export function calculateSMSS(
   }
 
   if ((attacker.hasItem('Thick Club') &&
-       attacker.named('Cubone', 'Marowak', 'Marowak-Alola') &&
+       attacker.named('Cubone', 'Marowak', 'Marowak-Alola', 'Marowak-Alola-Totem') &&
        move.category === 'Physical') ||
       (attacker.hasItem('Deep Sea Tooth') &&
        attacker.named('Clamperl') &&
@@ -945,9 +945,8 @@ export function calculateSMSS(
     dfMods.push(0x1800);
     desc.defenderAbility = defender.ability;
     desc.weather = field.weather;
-    // TODO: where is Dauntless shield applied in the modifier order?
   } else if (
-    defender.hasAbility('Grass Pelt', 'Dauntless Shield') &&
+    defender.hasAbility('Grass Pelt') &&
     field.hasTerrain('Grassy') &&
     hitsPhysical
   ) {
