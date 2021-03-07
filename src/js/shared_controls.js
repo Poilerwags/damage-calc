@@ -577,7 +577,7 @@ function formatMovePool(moves) {
 
 function isKnownDamagingMove(move) {
 	var m = GENERATION.moves.get(calc.toID(move));
-	return m && m.bp;
+	return m && m.basePower;
 }
 
 function selectMovesFromRandomOptions(moves) {
@@ -722,6 +722,12 @@ function createPokemon(pokeInfo) {
 		for (var i = 0; i < 4; i++) {
 			var moveName = set.moves[i];
 			pokemonMoves.push(new calc.Move(gen, moves[moveName] ? moveName : "(No Move)", {ability: ability, item: item}));
+		}
+
+		if (isRandoms) {
+			pokemonMoves = pokemonMoves.filter(function (move) {
+				return move.category !== "Status";
+			});
 		}
 
 		return new calc.Pokemon(gen, name, {
@@ -1259,17 +1265,21 @@ function loadCustomList(id) {
 			return (set.nickname ? set.pokemon + " (" + set.nickname + ")" : set.id);
 		},
 		query: function (query) {
-			var pageSize = 20;
+			var pageSize = 30;
 			var results = [];
 			var options = getSetOptions();
 			for (var i = 0; i < options.length; i++) {
 				var option = options[i];
-				if (option.isCustom && (option.nickname || option.id)) {
+				var pokeName = option.pokemon.toUpperCase();
+				var setName = option.set ? option.set.toUpperCase() : option.set;
+				if (option.isCustom && option.set && (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
+					return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0 || pokeName.indexOf(" " + term) >= 0 || setName.indexOf(term) === 0 || setName.indexOf("-" + term) >= 0 || setName.indexOf(" " + term) >= 0;
+				}))) {
 					results.push(option);
 				}
 			}
 			query.callback({
-				results: results,
+				results: results.slice((query.page - 1) * pageSize, query.page * pageSize),
 				more: results.length >= query.page * pageSize
 			});
 		},
